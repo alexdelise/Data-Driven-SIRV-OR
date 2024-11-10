@@ -29,7 +29,7 @@ layout_coordinates <- layout.norm(coordinates(fl_counties))
 frames <- list()
 
 # Generate plots for each decision period and add them to the frames list
-unique_periods <- unique(travel_data$timePeriod)
+unique_periods <- sort(unique(travel_data$timePeriod))
 for (period in unique_periods) {
   
   # Filter data for the current decision period
@@ -54,14 +54,14 @@ for (period in unique_periods) {
   ewidth <- E(g_period)$weight / max(E(g_period)$weight) * 5  # Adjust scale as needed
   
   # Set vertex sizes based on remaining capacity
-  vertex_sizes <- remaining_capacity / 1000
+  #vertex_sizes <- remaining_capacity / 1000
   
   # Create a plot for the current period and save it to the frames list
   img <- image_graph(width = 700, height = 500, res = 96)  # Open a new plot in memory
   par(mar = c(5, 2, 2, 2))
   plot.igraph(
     g_period,
-    vertex.size = vertex_sizes,
+    #vertex.size = vertex_sizes,
     vertex.label = fl_counties$NAME,
     vertex.label.color = "black",
     vertex.label.cex = 0.5,
