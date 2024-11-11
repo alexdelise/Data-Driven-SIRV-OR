@@ -61,7 +61,7 @@ for (period in unique_periods) {
   par(mar = c(5, 2, 2, 2))
   plot.igraph(
     g_period,
-    #vertex.size = vertex_sizes,
+    vertex.size = 5,
     vertex.label = fl_counties$NAME,
     vertex.label.color = "black",
     vertex.label.cex = 0.5,
