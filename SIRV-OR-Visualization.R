@@ -12,7 +12,7 @@ capacity_data <- read.csv("C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\
 colnames(capacity_data) <- c("Capacity")
 
 # Load pairwise distance matrix for counties
-distance_data <- as.matrix(read.csv("C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\inputData\\Distance.csv", header = FALSE))
+distance_data <- as.matrix(read.csv("C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\inputData\\sorted_distance.csv", header = FALSE))
 
 # Load hospitalization data
 hospitalization_data <- read.csv("C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\outputData\\hospitalizationData.csv")
