@@ -1,83 +1,120 @@
 # Load necessary libraries
-library(tigris)
-library(spdep)
-library(sf)
+library(readxl)  # For reading Excel files
 library(igraph)
 library(dplyr)
-library(ggplot2)
-library(magick)  # Library for creating GIFs
+library(magick)  # For creating GIFs
+library(tigris)
+library(sf)
+library(sp)
 
-# Load healthcare facility capacity data
-capacity_data <- read.csv("C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\inputData\\Capacity.csv", header = FALSE)
-colnames(capacity_data) <- c("Capacity")
+#--- Load the data ---
+results_data <- read_excel(
+  "C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\outputData\\results558.xlsx", 
+  sheet = "z"
+)  # Update with your file path
 
-# Load pairwise distance matrix for counties
-distance_data <- as.matrix(read.csv("C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\inputData\\sorted_distance.csv", header = FALSE))
+# Rename columns
+colnames(results_data)[1:2] <- c("fromRegion", "toRegion")
 
-# Load hospitalization data
-hospitalization_data <- read.csv("C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\outputData\\hospitalizationData.csv")
+# Convert fromRegion and toRegion to numeric
+results_data$fromRegion <- as.numeric(as.character(results_data$fromRegion))
+results_data$toRegion   <- as.numeric(as.character(results_data$toRegion))
 
-# Load travel data
-travel_data <- read.csv("C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\outputData\\travelData.csv")
+# Replace NA or empty cells in all day columns with 0
+results_data <- results_data %>%
+  mutate(across(-c(fromRegion, toRegion), ~ ifelse(is.na(.), 0, .)))
 
-# Load Florida counties shapefile for visualization
+# Debug: look at data
+print(head(results_data))
+
+#--- Load and prepare Florida counties ---
 options(tigris_use_cache = TRUE)
-fl_counties <- as_Spatial(counties("Florida", year = 2018, cb = TRUE))
-layout_coordinates <- layout.norm(coordinates(fl_counties))
+fl_counties_sf <- counties("Florida", year = 2018, cb = TRUE)  # sf object
+fl_counties    <- as(fl_counties_sf, "Spatial")                # convert to sp
 
-# Prepare an empty list to store images for the GIF
-frames <- list()
+# We want a consistent layout of all 67 counties
+# so we do not slice the layout by 'max_region'.
+layout_coordinates <- layout.norm(coordinates(fl_counties))  # normalizes bounding box
 
-# Generate plots for each decision period and add them to the frames list
-unique_periods <- sort(unique(travel_data$timePeriod))
-for (period in unique_periods) {
+# Number of Florida counties
+n_counties <- 67  # Florida has 67 counties
+
+# Make sure fl_counties is indeed length 67
+stopifnot(length(fl_counties) == n_counties)
+
+#--- Prepare for visualization ---
+day_columns <- colnames(results_data)[3:ncol(results_data)]  # The day columns
+frames      <- list()
+output_path <- "C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\allocationPics\\"
+
+for (day in day_columns) {
+  # Extract the data for this day
+  day_results <- results_data %>%
+    select(fromRegion, toRegion, all_of(day)) %>%
+    rename(z = all_of(day)) %>%
+    filter(z > 0)  # Only keep rows with positive transfers
   
-  # Filter data for the current decision period
-  period_travel_data <- travel_data %>% filter(timePeriod == period)
-  period_hospitalization_data <- hospitalization_data %>% filter(timePeriod == period)
+  # If no transfers, skip creating a plot
+  if (nrow(day_results) == 0) next
   
-  # Calculate remaining capacity after hospitalized patients for each region
-  remaining_capacity <- capacity_data$Capacity - period_hospitalization_data$hospitalized
+  # Build a 67 x 67 adjacency matrix
+  travel_matrix <- matrix(0, nrow = n_counties, ncol = n_counties)
   
-  # Create adjacency matrix for the travel data specific to the current period
-  travel_matrix <- matrix(0, nrow = 67, ncol = 67)
-  for (i in 1:nrow(period_travel_data)) {
-    from <- period_travel_data$fromRegion[i]
-    to <- period_travel_data$toFacility[i]
-    travel_matrix[from, to] <- period_travel_data$quantity[i]
+  # Populate the matrix with the day’s transfers
+  for (i in seq_len(nrow(day_results))) {
+    from_idx <- day_results$fromRegion[i]
+    to_idx   <- day_results$toRegion[i]
+    # Make sure these are valid in [1..67]
+    if (!is.na(from_idx) && !is.na(to_idx) &&
+        from_idx >= 1 && from_idx <= n_counties &&
+        to_idx   >= 1 && to_idx   <= n_counties) {
+      travel_matrix[from_idx, to_idx] <- day_results$z[i]
+    }
   }
   
-  # Create graph from adjacency matrix for travel data
-  g_period <- graph_from_adjacency_matrix(travel_matrix, weighted = TRUE)
-  
-  # Scale edge widths based on the quantity of people moving
-  ewidth <- E(g_period)$weight / max(E(g_period)$weight) * 5  # Adjust scale as needed
-  
-  # Set vertex sizes based on remaining capacity
-  #vertex_sizes <- remaining_capacity / 1000
-  
-  # Create a plot for the current period and save it to the frames list
-  img <- image_graph(width = 700, height = 500, res = 96)  # Open a new plot in memory
-  par(mar = c(5, 2, 2, 2))
-  plot.igraph(
-    g_period,
-    vertex.size = 5,
-    vertex.label = fl_counties$NAME,
-    vertex.label.color = "black",
-    vertex.label.cex = 0.5,
-    edge.arrow.size = 0.3,
-    edge.width = ewidth,
-    layout = layout_coordinates,
-    edge.color = "red",
-    main = paste("Patient Travel for Decision Period", period, "for All Counties")
+  # Create the igraph object
+  g_day <- graph_from_adjacency_matrix(
+    travel_matrix,
+    weighted = TRUE,
+    mode = "directed"
   )
-  dev.off()  # Close the plot
-  frames[[length(frames) + 1]] <- img  # Add the image to the frames list
+  
+  # Scale edge widths based on travel quantity
+  ewidth <- E(g_day)$weight / max(E(g_day)$weight, na.rm = TRUE) * 5
+  
+  # Create the plot for the current day
+  img <- image_graph(width = 5000, height = 5000, res = 512)
+  par(mar = c(5, 2, 2, 2))
+  
+  plot.igraph(
+    g_day,
+    vertex.size       = 0,  # no node circles
+    vertex.label      = fl_counties$NAME,
+    vertex.label.color = "black",
+    vertex.label.cex  = 0.8,
+    edge.arrow.size   = 0.3,
+    edge.width        = ewidth,
+    edge.color        = "blue",
+    layout            = layout_coordinates,
+    main              = paste("Patient Travel on Day", day)
+  )
+  
+  dev.off()
+  
+  # Save the daily image
+  day_image_path <- file.path(output_path, paste0("\travel_day_", day, ".png"))
+  image_write(img, path = day_image_path)
+  message("Saved image for Day: ", day, " at ", day_image_path)
+  
+  # Collect frames for GIF
+  frames[[length(frames) + 1]] <- img
 }
 
-# Create and save the GIF
-gif <- image_animate(image_join(frames), fps = 1)  # Adjust 'fps' for speed
-image_write(gif, path = "C:\\Users\\alexr\\OneDrive\\FSU\\FSU Sophomore Year\\SophomoreResearch\\Data-Driven-SIRV-OR\\allocationPics\\travel_animation.gif")
+#--- Create and save the GIF ---
+gif <- image_animate(image_join(frames), fps = 1)  # 1 frame per second
+gif_path <- file.path(output_path, "\travel_animation_TEST.gif")
+image_write(gif, path = gif_path)
 
-# Print completion message
-cat("GIF creation complete! The file has been saved to allocationPics folder.\n")
+cat("GIF and individual images created successfully!\n",
+    "Files saved to:", output_path, "\n")
+
