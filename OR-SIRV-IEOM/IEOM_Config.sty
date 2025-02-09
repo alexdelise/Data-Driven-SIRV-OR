@@ -1,0 +1,141 @@
+%%
+%% ieom_conf.sty
+%% Comprehensive IEOM Proceedings Style File
+%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ieom_conf}[2025/02/04 v2.0 IEOM Proceedings Style]
+
+% 1. PAGE GEOMETRY
+\RequirePackage[letterpaper,margin=1in]{geometry}
+
+% 2. FONTS AND SPACING
+\RequirePackage{times}     % Times New Roman
+\RequirePackage{setspace}
+\setstretch{1.0}           % Single spacing
+
+% 3. SECTION HEADINGS (titlesec)
+\RequirePackage{titlesec}
+
+% -- SECTION: 12 pt, bold, left-justified
+\titleformat{\section}%
+  {\bfseries\fontsize{12}{14}\selectfont}
+  {\thesection.}{1em}{}
+\titlespacing*{\section}{0pt}{*1}{*0.5}
+
+% -- SUBSECTION: 11 pt, bold, left-justified
+\titleformat{\subsection}%
+  {\bfseries\fontsize{11}{13}\selectfont}
+  {\thesubsection.}{1em}{}
+\titlespacing*{\subsection}{0pt}{*1}{*0.5}
+
+% -- SUBSUBSECTION: 10 pt bold, left-justified
+\titleformat{\subsubsection}%
+  {\bfseries\fontsize{10}{12}\selectfont}
+  {\thesubsubsection.}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{*1}{*0.5}
+
+% 4. TITLE, AUTHORS, AFFILIATIONS
+\newcommand{\PaperTitle}[1]{%
+  \begin{center}
+  \vspace*{-0cm}
+  {\fontsize{18}{22}\selectfont \bfseries #1\par}
+  \vspace*{1em}
+  \end{center}
+}
+
+\newcommand{\AuthorBlock}[2]{%
+  \begin{center}
+    {\fontsize{12}{14}\selectfont \bfseries #1\par}
+    {\fontsize{12}{14}\selectfont #2\par}
+    \vspace{1em}
+  \end{center}
+}
+
+% 5. ABSTRACT ENVIRONMENT
+\newenvironment{ieomabstract}{%
+  \begin{center}
+    \bfseries\fontsize{12}{14}\selectfont Abstract
+  \end{center}
+  \vspace{-1ex}%
+  \begin{quote}
+  \fontsize{10}{12}\selectfont
+  \justify
+}{%
+  \end{quote}
+  \vspace{1em}
+}
+
+% 6. KEYWORDS
+\newenvironment{ieomkeywords}{%
+  \noindent
+  \bfseries\fontsize{12}{14}\selectfont Keywords:\,
+  \normalfont\fontsize{10}{12}\selectfont
+}{%
+  \par
+  \vspace{1em}
+}
+
+% 7. FIGURES AND TABLES
+\RequirePackage[labelfont=bf,labelsep=period,justification=centering,font=small]{caption}
+\DeclareCaptionFont{ieomten}{\fontsize{10}{12}\selectfont}
+\captionsetup{font=ieomten}
+
+\renewcommand{\figurename}{Figure}
+\renewcommand{\tablename}{Table}
+
+% 8. REFERENCES
+\newenvironment{ieomreferences}{%
+  \section*{\fontsize{12}{14}\selectfont \bfseries References}
+  \fontsize{10}{12}\selectfont
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parsep}{0pt}
+  \renewcommand{\baselinestretch}{1}
+  \begin{list}{}{
+    \setlength{\leftmargin}{0.25in}%
+    \setlength{\rightmargin}{0in}
+    \setlength{\labelsep}{0in}
+    \setlength{\labelwidth}{0in}
+    \setlength{\itemindent}{-0.25in}
+  }
+}{%
+  \end{list}
+}
+
+% 9. BIOGRAPHY / BIOGRAPHIES
+\newenvironment{ieombiography}{%
+  \section*{\fontsize{12}{14}\selectfont \bfseries Biographies}
+  \fontsize{10}{12}\selectfont
+  \justify
+}{%
+  \vspace{1em}
+}
+
+% 10. FULL JUSTIFICATION HELPER
+\makeatletter
+\newcommand\justify{%  
+  \rightskip\z@ \leftskip\z@%
+  \parfillskip=0pt plus 1fil%
+}
+\makeatother
+
+% 11. CUSTOM HEADER AND FOOTER
+\RequirePackage{fancyhdr}
+\pagestyle{fancy} % Enable custom headers and footers
+
+% Clear default settings
+\fancyhf{} 
+
+% Define Header (Italicized)
+\fancyhead[C]{\textit{Proceedings of the International Conference on Industrial Engineering and Operations Management}}
+
+% Define Footer (Copyright Notice)
+\fancyfoot[C]{\small \copyright\ IEOM Society International}
+
+% Remove Page Numbers
+\renewcommand{\headrulewidth}{0pt} % No header rule line
+\renewcommand{\footrulewidth}{0pt} % No footer rule line
+
+% Ensure first page does not override fancy header/footer
+\AtBeginDocument{\thispagestyle{fancy}}
