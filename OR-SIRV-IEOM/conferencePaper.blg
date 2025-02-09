@@ -1,17 +1,17 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'conferencePaper.blg'
-[87] biber-MSWIN64:340> INFO - === 
-[124] Biber.pm:420> INFO - Reading 'conferencePaper.bcf'
-[206] Biber.pm:994> INFO - Found 35 citekeys in bib section 0
-[215] Biber.pm:4463> INFO - Processing section 0
-[225] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[290] bibtex.pm:1713> INFO - LaTeX decoding ...
-[350] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[526] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[526] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[526] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[526] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[553] bbl.pm:676> INFO - Writing 'conferencePaper.bbl' with encoding 'UTF-8'
-[573] bbl.pm:779> INFO - Output to conferencePaper.bbl
-[573] Biber.pm:131> WARN - legacy month field 'May' in entry 'abazari2024allocation' is not an integer - this will probably not sort properly.
-[573] Biber.pm:133> INFO - WARNINGS: 1
+[820] biber-MSWIN64:340> INFO - === 
+[858] Biber.pm:420> INFO - Reading 'conferencePaper.bcf'
+[942] Biber.pm:994> INFO - Found 35 citekeys in bib section 0
+[952] Biber.pm:4463> INFO - Processing section 0
+[962] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[1022] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1083] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[1269] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1270] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1270] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1270] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1299] bbl.pm:676> INFO - Writing 'conferencePaper.bbl' with encoding 'UTF-8'
+[1322] bbl.pm:779> INFO - Output to conferencePaper.bbl
+[1322] Biber.pm:131> WARN - legacy month field 'May' in entry 'abazari2024allocation' is not an integer - this will probably not sort properly.
+[1322] Biber.pm:133> INFO - WARNINGS: 1
