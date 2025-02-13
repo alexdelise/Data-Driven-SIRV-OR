@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber conferencePaper"] 0 "conferencePaper.bcf" "conferencePaper.bbl" "conferencePaper" 1739405773.13665 -1
-  "conferencePaper.bcf" 1739405772 111628 3030a98e4dce7c5090fb2fe4a8a828c4 "pdflatex"
+["biber conferencePaper"] 0 "conferencePaper.bcf" "conferencePaper.bbl" "conferencePaper" 1739406160.63975 -1
+  "conferencePaper.bcf" 1739406160 111628 3030a98e4dce7c5090fb2fe4a8a828c4 "pdflatex"
   "references.bib" 1739401215 27601 757a9223b01bf990e87264dfedcd28af ""
   (generated)
   "conferencePaper.bbl"
   "conferencePaper.blg"
   (rewritten before read)
-["pdflatex"] 1739405766.94186 "c:/Users/alexr/OneDrive/FSU/FSU Sophomore Year/SophomoreResearch/Data-Driven-SIRV-OR/OR-SIRV-IEOM/conferencePaper.tex" "conferencePaper.pdf" "conferencePaper" 1739405773.13721 0
+["pdflatex"] 1739406154.10917 "c:/Users/alexr/OneDrive/FSU/FSU Sophomore Year/SophomoreResearch/Data-Driven-SIRV-OR/OR-SIRV-IEOM/conferencePaper.tex" "conferencePaper.pdf" "conferencePaper" 1739406160.6404 0
   "C:/Users/alexr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1739125388 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/alexr/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1733971662 11986914 a832463954064d246947be4dd96e6e1e ""
   "C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -114,11 +114,11 @@
   "C:/Users/alexr/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "IEOM_Config.sty" 1739124849 3525 85ee12ab59555ae1011f573d0371f9d0 ""
   "IEOM_Ref_Config.tex" 1739081168 1439 3c26d8f8ae339f39371b4be52f42e827 ""
-  "c:/Users/alexr/OneDrive/FSU/FSU Sophomore Year/SophomoreResearch/Data-Driven-SIRV-OR/OR-SIRV-IEOM/conferencePaper.tex" 1739405753 29790 cff891bb112e0b126d13fa5eaf042a77 ""
-  "conferencePaper.aux" 1739405772 12865 4a3bec309a892ee6391541bc40ba9430 "pdflatex"
+  "c:/Users/alexr/OneDrive/FSU/FSU Sophomore Year/SophomoreResearch/Data-Driven-SIRV-OR/OR-SIRV-IEOM/conferencePaper.tex" 1739406146 29798 d6e8f52f1326df4ce4112b9ba5a106f4 ""
+  "conferencePaper.aux" 1739406160 12873 5ec8807e1e8aa7bcdd6d5d44c3910814 "pdflatex"
   "conferencePaper.bbl" 1739404257 75170 d66dc29798cb911d0d1260b0f2098e28 "biber conferencePaper"
-  "conferencePaper.run.xml" 1739405772 2388 d26d9609d090f09a61424129abb898db "pdflatex"
-  "conferencePaper.tex" 1739405753 29790 cff891bb112e0b126d13fa5eaf042a77 ""
+  "conferencePaper.run.xml" 1739406160 2388 d26d9609d090f09a61424129abb898db "pdflatex"
+  "conferencePaper.tex" 1739406146 29798 d6e8f52f1326df4ce4112b9ba5a106f4 ""
   "pics/cumulSIRVDynamicsVax0.1.png" 1739404680 64182 865809b411956ffafbac797ae0018484 ""
   "pics/paperStackedHeatmapNoVax.png" 1739404042 1365262 78101758b2bbc9621596934afe032a0e ""
   "pics/paperStackedHeatmapVax0.1.png" 1739402919 1325773 734a638ad34bf943cf1f9a81a0336e4b ""
