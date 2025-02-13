@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  13 FEB 2025 13:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  13 FEB 2025 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -546,6 +546,11 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ]
 
 [2]
+Overfull \hbox (159.01097pt too wide) detected at line 75
+[]
+ []
+
+
 
 [3]
 Underfull \hbox (badness 10000) in paragraph at lines 133--135
@@ -604,14 +609,14 @@ Package pdftex.def Info: pics/paperStackedPatientTransfersNoVax.png  used on inp
 (pdftex.def)             Requested size: 201.99121pt x 401.99901pt.
 
 
+[9 <./pics/paperStackedPatientTransfersVax0.1.png> <./pics/paperStackedPatientTransfersNoVax.png>]
+
 Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
 
-
-[9 <./pics/paperStackedPatientTransfersVax0.1.png> <./pics/paperStackedPatientTransfersNoVax.png>]
-Overfull \hbox (6.35992pt too wide) in paragraph at lines 256--256
+Overfull \hbox (6.35992pt too wide) in paragraph at lines 262--262
 [][]\OT1/ptm/m/n/10 Crokidakis, N. (2020). ``Mod-el-ing the early evo-lu-tion of the COVID-19 in Brazil: Re-sults from a Susceptible--Infectious--
  []
 
@@ -619,7 +624,9 @@ Overfull \hbox (6.35992pt too wide) in paragraph at lines 256--256
 
 [10]
 
-[11] (conferencePaper.aux)
+[11]
+
+[12] (conferencePaper.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -629,17 +636,17 @@ Package logreq Info: Writing requests to 'conferencePaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13825 strings out of 473682
- 259731 string characters out of 5719215
- 1102076 words of memory out of 5000000
- 36759 multiletter control sequences out of 15000+600000
+ 13823 strings out of 473682
+ 259769 string characters out of 5719215
+ 1101805 words of memory out of 5000000
+ 36757 multiletter control sequences out of 15000+600000
  579706 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,84p,2074b,1537s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conferencePaper.pdf (11 pages, 3208107 bytes).
+Output written on conferencePaper.pdf (12 pages, 3211585 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
