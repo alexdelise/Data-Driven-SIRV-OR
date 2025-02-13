@@ -81,8 +81,8 @@ Given that the above SIRV model assumes a homogeneous mixing of the interacting 
     & \min \frac{1}{n} \sum_{i,t'} u_i^{t'} \label{eq:objective} \\
     \text{subject to} \nonumber \\
     &S_i^{t+1} = S_i^t - \frac{\beta_i S_i^t I_i^t}{N_i} - \lambda_i S_i^t + \omega_i V_i^t + q_i R_i^t  && \forall i, t \label{eq:susceptible} \\
-    & I_i^{t+1} = I_i^t + \frac{\beta_i S_i^t I_i^t}{N_i} + \frac{\beta_i \ell_i V_i^{t'} I_i^t}{N_i} - \gamma_i I_i^t && \forall i, t \label{eq:infected} \\
-    & I_i^{t'+1} = I_i^{t'} + \frac{\beta_i S_i^{t'} I_i^{t'}}{N_i} + \frac{\beta_i \ell_i V_i^{t'} I_i^t}{N_i} - \gamma_i I_i^{t'} + \sum_j (Z_{j,i}^{t'} - Z_{i,j}^{t'}) && \forall i, t' \label{eq:infected_transfer} \\
+    & I_i^{t+1} = I_i^t + \frac{\beta_i S_i^t I_i^t}{N_i} + \frac{\beta_i \ell_i V_i^{t} I_i^t}{N_i} - \gamma_i I_i^t && \forall i, t \label{eq:infected} \\
+    & I_i^{t'+1} = I_i^{t'} + \frac{\beta_i S_i^{t'} I_i^{t'}}{N_i} + \frac{\beta_i \ell_i V_i^{t'} I_i^{t'}}{N_i} - \gamma_i I_i^{t'} + \sum_j (Z_{j,i}^{t'} - Z_{i,j}^{t'}) && \forall i, t' \label{eq:infected_transfer} \\
     & V_i^{t+1} = V_i^t + \lambda_i S_i^{t} - \omega_i V_i^t - \frac{\beta_i \ell_i V_i^t I_i^t}{N_i} && \forall i,t \label{eq:vaccinated} \\
     & R_i^{t+1} = R_i^t + \gamma_i I_i^t - q_i R_i^t && \forall i,t \label{eq:recovered} \\
     & u_i^{t'} = \sum_{t\ \in \{t' - \psi + 1, \ldots, t'\}} \alpha_i^{t} I_i^t + \sum_{i \neq j} (Z_{j,i}^{t'} - Z_{i,j}^{t'}) - \phi_i^{t'} && \forall i,t' \label{eq:unmet_demand} \\
@@ -95,7 +95,7 @@ Given that the above SIRV model assumes a homogeneous mixing of the interacting 
     & Z_{i,j}^{t'} \geq 0 && \forall i,j, t' \label{eq:nonnegativity_3}
 \end{align}
 
-The objective function (\ref{eq:objective}) minimizes the average unmet hospital bed demand across counties. Constraint (\ref{eq:susceptible}) models the evolution of the susceptible population, incorporating infection rates, vaccination rates, and immunity loss. Constraint (\ref{eq:infected}) tracks the dynamics of the infected population, including new infections, recoveries, and vaccine leakages. Constraint (\ref{eq:infected_transfer}) captures additional infection dynamics during decision periods, incorporating patient transfers. Constraint (\ref{eq:vaccinated}) models the vaccinated population's dynamics, accounting for vaccination rates, immunity loss, and vaccine inefficacy. Constraint (\ref{eq:recovered}) governs the recovered population's dynamics. Constraint (\ref{eq:unmet_demand}) defines unmet demand based on infections, patient transfers, and satisfied demand. Constraint (\ref{eq:satisfied_demand}) ensures that satisfied demand does not exceed a county's healthcare capacity. Constraint (\ref{eq:transfer_limit}) ensures that patient transfers between regions are limited to a large constant scaled by a binary indicator of whether the transfer occurs. Constraint (\ref{eq:distance_limit}) ensures that patient transfers between regions are allowed only if the distance between them does not exceed the maximum allowable threshold. Constraint (\ref{eq:binary_constraint}) enforces that the number of patients transferred between regions is nonzero only if the corresponding binary transfer indicator is activated. Constraints (\ref{eq:nonnegativity})-(\ref{eq:nonnegativity_3}) enforce non-negativity and consistency of decision variables. See Table \ref{tab:modelNotation} for description of the model sets, parameters, and decision variables. 
+The objective function (\ref{eq:objective}) minimizes the average unmet hospital bed demand across counties. Constraint (\ref{eq:susceptible}) models the evolution of the susceptible population, incorporating infection rates, vaccination rates, and immunity loss. Constraint (\ref{eq:infected}) tracks the dynamics of the infected population, including new infections, recoveries, and vaccine leakages. Constraint (\ref{eq:infected_transfer}) captures additional infection dynamics during decision periods, incorporating patient transfers. Constraint (\ref{eq:vaccinated}) models the vaccinated population's dynamics, accounting for vaccination rates, immunity loss, and vaccine inefficacy. Constraint (\ref{eq:recovered}) governs the recovered population's dynamics. Constraint (\ref{eq:unmet_demand}) defines unmet demand based on infections, patient transfers, and satisfied demand. Constraint (\ref{eq:satisfied_demand}) ensures that satisfied demand does not exceed a county's healthcare capacity. Constraint (\ref{eq:transfer_limit}) ensures that patient transfers between regions are limited to a large constant scaled by a binary indicator of whether the transfer occurs. Constraint (\ref{eq:distance_limit}) ensures that patient transfers between regions are allowed only if the distance between them does not exceed the maximum allowable threshold. Constraint (\ref{eq:binary_constraint}) enforces that the number of patients transferred between regions is nonzero only if the corresponding binary transfer indicator is activated. Constraints (\ref{eq:nonnegativity})-(\ref{eq:nonnegativity_3}) enforce non-negativity and consistency of decision variables. See Table\ref{tab:modelNotation} for description of the model sets, parameters, and decision variables. 
 
 \begin{table}[h]
     \caption{Model Component Notation}
@@ -160,7 +160,7 @@ In our model, we transform our nonlinear constraints (\ref{eq:susceptible})-(\re
 \begin{align}
     &S_i^{t+1} = S_i^t - \frac{\beta_i Y_i^t}{N_i} - \lambda_i S_i^t + \omega_i V_i^t + q_i R_i^t && \forall i, t \tag{2'} \label{eq:linearized_susceptible} \\
     &I_i^{t+1} = I_i^t + \frac{\beta_i Y_i^t}{N_i} + \frac{\beta_i \ell_i W_i^t}{N_i} - \gamma_i I_i^t && \forall i, t \tag{3'} \label{eq:linearized_infected} \\
-    &I_i^{t'+1} = I_i^{t'} + \frac{\beta_i Y_i^{t'}}{N_i} + \frac{\beta_i \ell_i W_i^t}{N_i} - \gamma_i I_i^{t'} + \sum_j (Z_{j,i}^{t'} - _j Z_{i,j}^{t'}) && \forall i, t' \tag{4'} \label{eq:linearized_infected_transfer} \\
+    &I_i^{t'+1} = I_i^{t'} + \frac{\beta_i Y_i^{t'}}{N_i} + \frac{\beta_i \ell_i W_i^{t'}}{N_i} - \gamma_i I_i^{t'} + \sum_j (Z_{j,i}^{t'} - _j Z_{i,j}^{t'}) && \forall i, t' \tag{4'} \label{eq:linearized_infected_transfer} \\
     &V_i^{t+1} = V_i^t + \lambda_i S_i^t - \omega_i V_i^t - \frac{\beta_i \ell_i W_i^t}{N_i} && \forall i, t \tag{5'} \label{eq:linearized_vaccinated}
 \end{align}
 and we add the following constraints:
@@ -184,35 +184,43 @@ With the inclusion of our vaccination dynamics, we include the following new ass
 
 
 \subsubsection{Study Area and Parameter Estimation}
-The number of hospital beds required per infection, $\alpha_i^t$, for county $i$ at time $t$, was derived using time series data from \textcite{abazari2024allocation}. This calculation is crucial for assessing unmet hospital demand in Florida counties. Initially, the daily hospitalized patient count $W_i^t$ was calculated by multiplying the percentage of utilized hospital beds (\textit{PctBeds}) by the number of available staffed beds (\textit{Staffed.All.Beds}), sourced from \parencite{covid19pvi2023}. Daily confirmed COVID-19 cases, $I_i^t$, from \parencite{florida_covid19_hub2023} were used to compute $\alpha_i^t$ using the equation:
+The number of hospital beds required per infection, $\alpha_i^t$, for county $i$ at time $t$, was derived using time series data \parencite{abazari2024allocation}. This calculation is crucial for assessing unmet hospital demand in Florida counties. Initially, the daily hospitalized patient count $H_i^t$ was calculated using data from \textcite{covid19pvi2023}by multiplying the percentage of utilized hospital beds (\texttt{PctBeds}) by the number of available staffed beds (\texttt{Staffed.All.Beds}). Daily confirmed COVID-19 cases, $I_i^t$, from \textcite{florida_covid19_hub2023} were used to compute $\alpha_i^t$ using the equation:
 \[
-    \alpha_i^t = \frac{W_i^t}{I_i^t}.
+    \alpha_i^t = \frac{H_i^t}{I_i^t}.
 \]
 This value represents the upper limit of the 95\% confidence interval from the hierarchical time series models used in the analysis.
  
 The authors in \textcite{abazari2024allocation} also utilized time-series data from the two aforementioned sources to estimate the infection and recovery rates ($\beta_i$ and $\gamma_i$) on a per-county basis, as well as the initial numbers of susceptible, infected, and recovered individuals ($S_i^0, I_i^0, R_i^0$). To derive these parameters, the first forty days of the study period were analyzed using a robust maximum likelihood estimation method. The infection and recovery rates were also assumed to remain constant throughout the mathematical model's progression.
 
-For the vaccine-related parameters ($\lambda_i$, $q_i$, $\omega_i$, and $\ell_i$), we harnessed an empirical approach. These parameters were selected based on informed estimates rather than directly derived from data, reflecting the best available assumptions given the absence of detailed datasets for the parameters. 
+For the vaccine parameters related to effectiveness, we harnessed data from \textcite{zheng2022real} and set $\omega_i = 0.109$ and $\ell_i = 0.3$ for each county. The remaining perameters were selected using an empirical approach, thus we set $q_i = 0.08$ and $\lambda_i = 0.1$ for each county. Finally, the maximum allowable travel distance was set to $D=70$mi.
 
 % FUTURE WORK SHOULD INCLUDE MAKING TIME SERIES DATA FOR THESE PARAMETERS AS WELL OR SOMETHING LIKE FINDING REAL SUPPORTING DATA
 
 
 \section{Results}
-In this section, we present the results of the mathematical model solved using the Florida case study in a vaccinated and unvaccinated scenario. We set $D=70$mi for both scenarios and our vaccine scenario parameters as $\lambda_i = 0.1$,  $q_i = 0.01$, $\omega_i=0.001$, $\ell_i=0.05$, and $V_i^0 = 0$. The model was solved using the CPLEX solver on GAMS software using all the aforementioned parameters. 
+In this section, we present the results of the mathematical model solved using the Florida case study in a vaccinated and unvaccinated scenario. The model was solved using the CPLEX solver on GAMS software using all the aforementioned parameters. 
 
-\subsection{Unmet Hospital Demand and Infections}
+\subsection{SIRV Dynamics}
+Figure~\ref{fig:sir(v)Dynamics} demonstrates the proportions of the SIRV compartments of out model over the time horizon, with a noteable late-stage increase in susceptibility and infections. This rise is driven by waning immunity, where previously recovered individuals lose natural immunity, thus reentering the susceptible group, and vaccinated individuals experience immunity loss, reducing the vaccinated population. As immunity declines and the vaccinated (and thus protected) population decreases, a ``second-wave'' of infection emerges, leading to a resurgence of the susceptible and infected populations. This phenomenon highlights the need for booster vaccines to prevent late stage or other immunity-retaining strategies to late resurgences of disease spread.
+
 \begin{figure}
     \centering
-    \includegraphics[width=0.42\linewidth]{pics/totalUnmetDemandComparison.png}
-    \includegraphics[width=0.48\linewidth]{pics/totalInfectionComparison.png}
-    \caption{Total Unmet Hospital and Demand Infections Across Decision Periods}\label{fig:udInfec}
+    \includegraphics[width=0.42\linewidth]{pics/cumulSIRVDynamicsVax0.1.png}
+    %\includegraphics[width=0.48\linewidth]{pics/}
+    \caption{Cumulative SIRV and SIR Dynamics in Florida}\label{fig:sir(v)Dynamics}
 \end{figure}
 
-We observe that unmet hospital demand peaks around day 100, with total infections peaking approximately twenty days later. Figure~\ref{fig:udInfec} demonstrates how, interestingly, unmet hospital demand slightly increases when vaccine dynamics are introduced in the case study, however there are significantly fewer total infections accross the time horizon. There are many potential explanations for this phenomenon: 
+\subsection{Unmet Demand}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.42\linewidth]{pics/totalUnmetDemandComparison.png}
+%    \includegraphics[width=0.48\linewidth]{pics/totalInfectionComparison.png}
+%    \caption{Total Unmet Hospital and Demand Infections Across Decision Periods}\label{fig:udInfec}
+%\end{figure}
+
+%We observe that unmet hospital demand peaks around day 100, with total infections peaking approximately twenty days later. Figure~\ref{fig:udInfec} demonstrates how, interestingly, unmet hospital demand slightly increases when vaccine dynamics are introduced in the case study, however there are significantly fewer total infections accross the time horizon. There are many potential explanations for this phenomenon: 
 
 \subsection{Patient Transfers}
-
-
 \begin{figure}
     \centering
     \includegraphics[width=0.43\linewidth]{pics/paperStackedPatientTransfersVax0.1.png}
@@ -224,7 +232,7 @@ We observe that unmet hospital demand peaks around day 100, with total infection
     \centering
     \includegraphics[width=0.43\linewidth]{pics/paperStackedHeatmapVax0.1.png}
     \includegraphics[width=0.43\linewidth]{pics/paperStackedHeatmapNoVax.png}
-    \caption{Unmet Demand for Vaccinated Scenario (Left) vs. Unvaccinated Scenario (Right)}\label{fig:unmetDemand}
+   \caption{Unmet Demand for Vaccinated Scenario (Left) vs. Unvaccinated Scenario (Right)}\label{fig:udHeatmap}
 \end{figure}
 
 \section{Conclusions and Future Work}

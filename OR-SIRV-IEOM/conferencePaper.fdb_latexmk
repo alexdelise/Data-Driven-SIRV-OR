@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber conferencePaper"] 0 "conferencePaper.bcf" "conferencePaper.bbl" "conferencePaper" 1739128990.75279 -1
-  "conferencePaper.bcf" 1739128990 111559 5e7b00ba035d69671455d48a20b93357 "pdflatex"
-  "references.bib" 1739081168 27233 18712d09a864513bc75aefa2db0e004a ""
+["biber conferencePaper"] 0 "conferencePaper.bcf" "conferencePaper.bbl" "conferencePaper" 1739405773.13665 -1
+  "conferencePaper.bcf" 1739405772 111628 3030a98e4dce7c5090fb2fe4a8a828c4 "pdflatex"
+  "references.bib" 1739401215 27601 757a9223b01bf990e87264dfedcd28af ""
   (generated)
   "conferencePaper.bbl"
   "conferencePaper.blg"
   (rewritten before read)
-["pdflatex"] 1739128985.16965 "c:/Users/alexr/OneDrive/FSU/FSU Sophomore Year/SophomoreResearch/Data-Driven-SIRV-OR/OR-SIRV-IEOM/conferencePaper.tex" "conferencePaper.pdf" "conferencePaper" 1739128990.75364 0
+["pdflatex"] 1739405766.94186 "c:/Users/alexr/OneDrive/FSU/FSU Sophomore Year/SophomoreResearch/Data-Driven-SIRV-OR/OR-SIRV-IEOM/conferencePaper.tex" "conferencePaper.pdf" "conferencePaper" 1739405773.13721 0
   "C:/Users/alexr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1739125388 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/alexr/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1733971662 11986914 a832463954064d246947be4dd96e6e1e ""
   "C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -114,17 +114,16 @@
   "C:/Users/alexr/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "IEOM_Config.sty" 1739124849 3525 85ee12ab59555ae1011f573d0371f9d0 ""
   "IEOM_Ref_Config.tex" 1739081168 1439 3c26d8f8ae339f39371b4be52f42e827 ""
-  "c:/Users/alexr/OneDrive/FSU/FSU Sophomore Year/SophomoreResearch/Data-Driven-SIRV-OR/OR-SIRV-IEOM/conferencePaper.tex" 1739128984 28872 392ba9210f119358184f44c2b48d2f2c ""
-  "conferencePaper.aux" 1739128990 12633 f618d2381fcb4973918032660808503b "pdflatex"
-  "conferencePaper.bbl" 1739081196 72857 4d3a106fe022d17d72e5dcf163f18e6a "biber conferencePaper"
-  "conferencePaper.run.xml" 1739128990 2388 d26d9609d090f09a61424129abb898db "pdflatex"
-  "conferencePaper.tex" 1739128984 28872 392ba9210f119358184f44c2b48d2f2c ""
-  "pics/paperStackedHeatmapNoVax.png" 1739081168 1454174 2abbe33091fced2fc8c57af53a97e155 ""
-  "pics/paperStackedHeatmapVax0.1.png" 1739081168 1441279 4c08b4184273258b906289b696e69bbb ""
-  "pics/paperStackedPatientTransfersNoVax.png" 1739081168 1422635 03df0359754f679c06ae4fec6bf99ae5 ""
-  "pics/paperStackedPatientTransfersVax0.1.png" 1739081168 1459717 c85573ecb991853e5ade6bcf1ddf55f3 ""
-  "pics/totalInfectionComparison.png" 1739125802 47422 5679a3469fc58bcc68deb43112a0ea52 ""
-  "pics/totalUnmetDemandComparison.png" 1739125227 59893 2f87afbd1cdf70a1da97f5d5edf2d9e0 ""
+  "c:/Users/alexr/OneDrive/FSU/FSU Sophomore Year/SophomoreResearch/Data-Driven-SIRV-OR/OR-SIRV-IEOM/conferencePaper.tex" 1739405753 29790 cff891bb112e0b126d13fa5eaf042a77 ""
+  "conferencePaper.aux" 1739405772 12865 4a3bec309a892ee6391541bc40ba9430 "pdflatex"
+  "conferencePaper.bbl" 1739404257 75170 d66dc29798cb911d0d1260b0f2098e28 "biber conferencePaper"
+  "conferencePaper.run.xml" 1739405772 2388 d26d9609d090f09a61424129abb898db "pdflatex"
+  "conferencePaper.tex" 1739405753 29790 cff891bb112e0b126d13fa5eaf042a77 ""
+  "pics/cumulSIRVDynamicsVax0.1.png" 1739404680 64182 865809b411956ffafbac797ae0018484 ""
+  "pics/paperStackedHeatmapNoVax.png" 1739404042 1365262 78101758b2bbc9621596934afe032a0e ""
+  "pics/paperStackedHeatmapVax0.1.png" 1739402919 1325773 734a638ad34bf943cf1f9a81a0336e4b ""
+  "pics/paperStackedPatientTransfersNoVax.png" 1739403136 1518556 d9f3a76f84aea9a1d4aac70e4699cd17 ""
+  "pics/paperStackedPatientTransfersVax0.1.png" 1739402903 1352596 afd54c88d98af144d3405e2cdf149c55 ""
   (generated)
   "conferencePaper.aux"
   "conferencePaper.bcf"

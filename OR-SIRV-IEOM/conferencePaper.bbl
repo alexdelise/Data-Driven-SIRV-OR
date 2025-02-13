@@ -1733,6 +1733,63 @@
       \field{pages}{78}
       \range{pages}{1}
     \endentry
+    \entry{zheng2022real}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=0d0c3347faba4c97bf1cfbf073d77e1a}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Caifang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d57b115c71d6143d38b4196ab95e9a4c}{%
+           family={Shao},
+           familyi={S\bibinitperiod},
+           given={Weihao},
+           giveni={W\bibinitperiod}}}%
+        {{hash=01205ecbc3acac5ab7489c8f3aadb691}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaorui},
+           giveni={X\bibinitperiod}}}%
+        {{hash=3e6584898df05b7a864ee2c79695b013}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Bowen},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0cc5316e6f0e5fc8025c0dfecc80dbce}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Gaili},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4fece3f163324172bba987dcd205bd8e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{28fd2cd852ed57ee8792b712bcd645ce}
+      \strng{fullhash}{97b540c562c4e7adb91fb4879355628e}
+      \strng{fullhashraw}{97b540c562c4e7adb91fb4879355628e}
+      \strng{bibnamehash}{97b540c562c4e7adb91fb4879355628e}
+      \strng{authorbibnamehash}{97b540c562c4e7adb91fb4879355628e}
+      \strng{authornamehash}{28fd2cd852ed57ee8792b712bcd645ce}
+      \strng{authorfullhash}{97b540c562c4e7adb91fb4879355628e}
+      \strng{authorfullhashraw}{97b540c562c4e7adb91fb4879355628e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of infectious diseases}
+      \field{title}{Real-world effectiveness of COVID-19 vaccines: a literature review and meta-analysis}
+      \field{volume}{114}
+      \field{year}{2022}
+      \field{pages}{252\bibrangedash 260}
+      \range{pages}{9}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
