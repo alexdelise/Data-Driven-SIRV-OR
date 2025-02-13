@@ -3,7 +3,14 @@
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "Arda",
+        "Brevard",
+        "chktex",
+        "ij",
+        "Lise",
+        "Vanli"
+    ],
     "ignoreWords": [],
     "import": [],
     "ignoreRegExpList": [

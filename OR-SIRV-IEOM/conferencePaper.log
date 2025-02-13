@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  13 FEB 2025 00:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  13 FEB 2025 13:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -566,35 +566,41 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
 [6]
-<pics/cumulSIRVDynamicsVax0.1.png, id=33, 727.0362pt x 494.3268pt>
+<pics/cumulSIRVDynamicsVax0.1.png, id=33, 727.0362pt x 497.9403pt>
 File: pics/cumulSIRVDynamicsVax0.1.png Graphic file (type png)
 <use pics/cumulSIRVDynamicsVax0.1.png>
-Package pdftex.def Info: pics/cumulSIRVDynamicsVax0.1.png  used on input line 208.
-(pdftex.def)             Requested size: 197.29623pt x 134.14133pt.
-<pics/paperStackedHeatmapVax0.1.png, id=35, 837.91902pt x 1675.63158pt>
-File: pics/paperStackedHeatmapVax0.1.png Graphic file (type png)
-<use pics/paperStackedHeatmapVax0.1.png>
-Package pdftex.def Info: pics/paperStackedHeatmapVax0.1.png  used on input line 216.
-(pdftex.def)             Requested size: 201.99121pt x 403.924pt.
-<pics/paperStackedHeatmapNoVax.png, id=36, 837.91902pt x 1675.63158pt>
-File: pics/paperStackedHeatmapNoVax.png Graphic file (type png)
-<use pics/paperStackedHeatmapNoVax.png>
-Package pdftex.def Info: pics/paperStackedHeatmapNoVax.png  used on input line 217.
-(pdftex.def)             Requested size: 201.99121pt x 403.924pt.
+Package pdftex.def Info: pics/cumulSIRVDynamicsVax0.1.png  used on input line 210.
+(pdftex.def)             Requested size: 201.99121pt x 138.33582pt.
+<pics/cumulSIRVDynamicsNoVax.png, id=35, 727.0362pt x 494.3268pt>
+File: pics/cumulSIRVDynamicsNoVax.png Graphic file (type png)
+<use pics/cumulSIRVDynamicsNoVax.png>
+Package pdftex.def Info: pics/cumulSIRVDynamicsNoVax.png  used on input line 211.
+(pdftex.def)             Requested size: 201.99121pt x 137.33192pt.
 
 
-[7 <./pics/cumulSIRVDynamicsVax0.1.png>]
+[7 <./pics/cumulSIRVDynamicsVax0.1.png> <./pics/cumulSIRVDynamicsNoVax.png>]
+<pics/totalUnmetDemandVax0.1.png, id=42, 585.79997pt x 616.35986pt>
+File: pics/totalUnmetDemandVax0.1.png Graphic file (type png)
+<use pics/totalUnmetDemandVax0.1.png>
+Package pdftex.def Info: pics/totalUnmetDemandVax0.1.png  used on input line 224.
+(pdftex.def)             Requested size: 201.99121pt x 212.52211pt.
+<pics/totalUnmetDemandNoVax.png, id=43, 585.79997pt x 616.35986pt>
+File: pics/totalUnmetDemandNoVax.png Graphic file (type png)
+<use pics/totalUnmetDemandNoVax.png>
+Package pdftex.def Info: pics/totalUnmetDemandNoVax.png  used on input line 225.
+(pdftex.def)             Requested size: 201.99121pt x 212.52211pt.
 
-[8 <./pics/paperStackedHeatmapVax0.1.png> <./pics/paperStackedHeatmapNoVax.png>]
-<pics/paperStackedPatientTransfersVax0.1.png, id=47, 821.19368pt x 1634.33443pt>
+
+[8 <./pics/totalUnmetDemandVax0.1.png> <./pics/totalUnmetDemandNoVax.png>]
+<pics/paperStackedPatientTransfersVax0.1.png, id=49, 821.19368pt x 1634.33443pt>
 File: pics/paperStackedPatientTransfersVax0.1.png Graphic file (type png)
 <use pics/paperStackedPatientTransfersVax0.1.png>
-Package pdftex.def Info: pics/paperStackedPatientTransfersVax0.1.png  used on input line 238.
+Package pdftex.def Info: pics/paperStackedPatientTransfersVax0.1.png  used on input line 248.
 (pdftex.def)             Requested size: 201.99121pt x 401.99901pt.
-<pics/paperStackedPatientTransfersNoVax.png, id=48, 821.19368pt x 1634.33443pt>
+<pics/paperStackedPatientTransfersNoVax.png, id=50, 821.19368pt x 1634.33443pt>
 File: pics/paperStackedPatientTransfersNoVax.png Graphic file (type png)
 <use pics/paperStackedPatientTransfersNoVax.png>
-Package pdftex.def Info: pics/paperStackedPatientTransfersNoVax.png  used on input line 239.
+Package pdftex.def Info: pics/paperStackedPatientTransfersNoVax.png  used on input line 249.
 (pdftex.def)             Requested size: 201.99121pt x 401.99901pt.
 
 
@@ -605,7 +611,7 @@ Package biblatex Warning: Name format 'last-first' deprecated.
 
 
 [9 <./pics/paperStackedPatientTransfersVax0.1.png> <./pics/paperStackedPatientTransfersNoVax.png>]
-Overfull \hbox (6.35992pt too wide) in paragraph at lines 246--246
+Overfull \hbox (6.35992pt too wide) in paragraph at lines 256--256
 [][]\OT1/ptm/m/n/10 Crokidakis, N. (2020). ``Mod-el-ing the early evo-lu-tion of the COVID-19 in Brazil: Re-sults from a Susceptible--Infectious--
  []
 
@@ -623,17 +629,17 @@ Package logreq Info: Writing requests to 'conferencePaper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13818 strings out of 473682
- 259508 string characters out of 5719215
+ 13825 strings out of 473682
+ 259731 string characters out of 5719215
  1102076 words of memory out of 5000000
- 36752 multiletter control sequences out of 15000+600000
+ 36759 multiletter control sequences out of 15000+600000
  579706 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,84p,2074b,1537s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conferencePaper.pdf (11 pages, 4559284 bytes).
+Output written on conferencePaper.pdf (11 pages, 3208107 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

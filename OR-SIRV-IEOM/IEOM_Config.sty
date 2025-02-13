@@ -11,7 +11,10 @@
 % 2. FONTS AND SPACING
 \RequirePackage{times}     % Times New Roman
 \RequirePackage{setspace}
-\setstretch{1.0}           % Single spacing
+\setstretch{1.0}       
+\setlength{\parindent}{0pt}  % No indentation
+\setlength{\parskip}{3pt}    % Adds space between paragraphs
+
 
 % 3. SECTION HEADINGS (titlesec)
 \RequirePackage{titlesec}
@@ -20,19 +23,19 @@
 \titleformat{\section}%
   {\bfseries\fontsize{12}{14}\selectfont}
   {\thesection.}{1em}{}
-\titlespacing*{\section}{0pt}{*1}{*0.5}
+\titlespacing*{\section}{0pt}{*1}{0pt}
 
 % -- SUBSECTION: 11 pt, bold, left-justified
 \titleformat{\subsection}%
   {\bfseries\fontsize{11}{13}\selectfont}
   {\thesubsection.}{1em}{}
-\titlespacing*{\subsection}{0pt}{*1}{*0.5}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
 
 % -- SUBSUBSECTION: 10 pt bold, left-justified
 \titleformat{\subsubsection}%
   {\bfseries\fontsize{10}{12}\selectfont}
   {\thesubsubsection.}{1em}{}
-\titlespacing*{\subsubsection}{0pt}{*1}{*0.5}
+\titlespacing*{\subsubsection}{0pt}{0pt}{0pt}
 
 % 4. TITLE, AUTHORS, AFFILIATIONS
 \newcommand{\PaperTitle}[1]{%

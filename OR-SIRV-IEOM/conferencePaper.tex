@@ -173,7 +173,7 @@ and we add the following constraints:
     &W_i^t \geq N_i V_i^t + N_i I_i^t - N_i^2 \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad && \forall i, t \tag{27} \label{eq:W_lower_bound} \\
     &W_i^t \leq N_i V_i^t && \forall i, t \tag{28} \label{eq:W_upper_bound_X} \\
     &W_i^t \leq N_i I_i^t && \forall i, t \tag{29} \label{eq:W_upper_bound_I}
-\end{align}.
+\end{align}
 
 \subsubsection{Model Assumptions}
 As our model is an extension of that found in \textcite{abazari2024allocation}, we employ many of the same assumptions: (1) The total capacity of healthcare facilities is constant and does not change over time; (2) Patients may be transferred to other regions, provided the distance is within a predefined reasonable limit; (3) The decision-making horizon is ten days; (4) All patients within a region are assumed to have the same recovery time; (5) Regions are permitted to both send and receive patients from other regions during the given time frame; (6) The healthcare facilities within each region are aggregated into a single value, representing the total capacity for that region; (7) Distances between regions are calculated based on roadway travel distances; (8) Assigning patients to different regions does not influence the number of beds required per infection.
@@ -203,19 +203,27 @@ In this section, we present the results of the mathematical model solved using t
 \subsection{SIRV Dynamics}
 Figure~\ref{fig:sir(v)Dynamics} demonstrates the proportions of the SIRV compartments of out model over the time horizon, with a notable late-stage increase in susceptibility and infections. This rise is driven by waning immunity, where previously recovered individuals lose natural immunity, thus reentering the susceptible group, and vaccinated individuals experience immunity loss, reducing the vaccinated population. As immunity declines and the vaccinated (and thus protected) population decreases, a ``second-wave'' of infection emerges, leading to a resurgence of the susceptible and infected populations. This phenomenon highlights the need for booster vaccines to prevent late stage or other immunity-retaining strategies to late resurgences of disease spread.
 
+When comparing the SIR(V) dynamics between vaccinated and unvaccinated scenarios, the number of susceptible individuals is significantly lower in the vaccinated case, consistent with the expected impact of vaccination. There is also a significant drop in the number of susceptible individuals in the vaccinated scenario due to the impact of vaccines whereas in the unvaccinated scenario, there is a more gradual decline as susceptible individuals become infected. The infected population in the unvaccinated population also peaks higher than in the vaccinated scenario, indicating the higher transmission risk associated with a lack of disease prevention and intervention. Finally, the recovered population in the unvaccinated scenario peaks higher than in the vaccinated scenario because vaccinated individuals are less likely to become infected, reducing the overall number of individuals who recover from the disease.
+
 \begin{figure}
     \centering
-    \includegraphics[width=0.42\linewidth]{pics/cumulSIRVDynamicsVax0.1.png}
-    %\includegraphics[width=0.48\linewidth]{pics/}
+    \includegraphics[width=0.43\linewidth]{pics/cumulSIRVDynamicsVax0.1.png}
+    \includegraphics[width=0.43\linewidth]{pics/cumulSIRVDynamicsNoVax.png}
     \caption{Cumulative SIRV and SIR Dynamics in Florida}\label{fig:sir(v)Dynamics}
 \end{figure}
 
 \subsection{Unmet Demand}
+Figure~\ref{fig:udHeatmap} displays the aggregate unmet demand that each Florida county attains during the time horizon. We observe the vast majority of unmet hospital demand populate in south Florida's populous counties like Palm Beach, Broward, and Miami-Dade which, with Palm Beach approaching an unsatisfied population of ninety thousand. Central Florida also experiences a considerable amount of unmet demand, especially in Orange, Brevard, Hillsborough, and Monroe counties, though at a lower level. Moving north through Florida to the more rural counties, there is little unmet hospital demand compared to its southern counterparts, with Baker county achieving the fewest unmet demand throughout the case study. 
+
+In the unvaccinated scenario, the large south Florida metropolitan areas experience considerably more unmet demand. Miami-Dade county experiences nearly 144 thousand unsatisfied individuals, followed my Broward and Palm Beach counties with over fifty and seventy-five thousand unsatisfied individuals, respectively. Central Florida attains only minimally more unmet demand, highlighted by Hillsborough county, and the more rural counties in the Panhandle, especially Bay county, attain comparatively distributed and low levels of unmet hospital demand. 
+
+The spatial distribution of unmet hospital demand demonstrates where vital healthcare resources and preventative measures, like vaccines, are critical to minimize disease spread, and thus unmet hospital demand and strain on the healthcare system. Large metropolitan areas may require increased resource allocation and strategic planning to prevent hospital overcrowding and ensure adequate care for their larger infected populations. In contrast, rural areas, which experience lower patient transfer volumes and fewer total infections, generally face less strain on their healthcare systems and can manage demand more effectively.
+
 \begin{figure}
     \centering
-    \includegraphics[width=0.43\linewidth]{pics/paperStackedHeatmapVax0.1.png}
-    \includegraphics[width=0.43\linewidth]{pics/paperStackedHeatmapNoVax.png}
-   \caption{Unmet Demand Heatmap for Vaccinated Scenario (Left) vs. Unvaccinated Scenario (Right)}\label{fig:udHeatmap}
+    \includegraphics[width=0.43\linewidth]{pics/totalUnmetDemandVax0.1.png}
+    \includegraphics[width=0.43\linewidth]{pics/totalUnmetDemandNoVax.png}
+   \caption{Aggregate Unmet Demand Heatmap for Vaccinated Scenario (Blue) vs. Unvaccinated Scenario (Red)}\label{fig:udHeatmap}
 \end{figure}
 %\begin{figure}
 %    \centering
@@ -227,9 +235,11 @@ Figure~\ref{fig:sir(v)Dynamics} demonstrates the proportions of the SIRV compart
 %We observe that unmet hospital demand peaks around day 100, with total infections peaking approximately twenty days later. Figure~\ref{fig:udInfec} demonstrates how, interestingly, unmet hospital demand slightly increases when vaccine dynamics are introduced in the case study, however there are significantly fewer total infections across the time horizon. There are many potential explanations for this phenomenon: 
 
 \subsection{Patient Transfers}
-Patient transfers play a critical role in the transmission of infectious diseases, thus they were tracked on all decision periods of our mathematical model. Figure\ref{fig:patientAlloc} displays the patient transfer information for Days 30 and 90 of the model. The thickness of the arrow dictates the volume of the patient transfer, and the direction of the arrow, from tip to tail, demonstrates patients being transferred from county $i$ to county $j$. 
+Patient transfers play a critical role in the transmission of infectious diseases, thus they were tracked on all decision periods of our mathematical model. Figure~\ref{fig:patientAlloc} displays the patient transfer information for Days 30 and 90 of the model. The thickness of the arrow dictates the volume of the patient transfer, and the direction of the arrow, from tail to tip, demonstrates patients being transferred from county $i$ to county $j$.  
 
-We omit the graphs of the daily in- and out-degrees of each county in Florida patient travel, though we list some of the key insights they reveal. In the vaccinated scenario, large metropolitan counties like Palm Beach, Orange, and Duval counties repeated appear as ``receivers'' of large patient volumes. In general, the large metropolitan areas often sent and received large volumes of patients as they have larger hospital capacities, though a larger number of infections. Other more rural counties, like those in the Panhandle, regularly export patients to nearby regions since they tend to have limited healthcare capacity relative to their infection surges, making them consistent ``senders''. We also observe that with the waning of vaccine effectiveness and immunity observed in Figure\ref{fig:sir(v)Dynamics}, patient transfer drastically increases to account for the surge in infections. Finally, patient transfers occurred consistently throughout the time horizon, indicating that despite vaccination efforts, hospital capacity constraints remained a persistent challenge, necessitating ongoing redistribution of patients to balance demand across regions. 
+We omit the graphs of the daily in- and out-degrees of each county for Florida patient travel in both scenarios, though we list some of the key insights they reveal. In the vaccinated scenario, large metropolitan counties like Palm Beach, Orange, and Duval counties repeated appear as ``receivers'' of large patient volumes. In general, the large metropolitan areas often send and received large volumes of patients as they have larger hospital capacities, though a larger number of infections. Other more rural counties, like those in the Panhandle, regularly export patients to nearby regions since they tend to have limited healthcare capacity relative to their infection surges, making them consistent ``senders''. We also observe that with the waning of vaccine effectiveness and immunity observed in Figure\ref{fig:sir(v)Dynamics}, patient transfer drastically increases to account for the surge in infections. Finally, patient transfers occurred consistently throughout the time horizon, indicating that despite vaccination efforts, hospital capacity constraints remained a persistent challenge, necessitating ongoing redistribution of patients to balance demand across regions. 
+
+In the unvaccinated scenario, due to a higher peak of infection levels than in the vaccinated scenario, overall patient transfers tend to be larger and occur more frequently. The receivers once again included metropolitan areas with large hospital capacities, including Miami-Dade, Broward, Hillsborough, Orange, and Duval counties, and the senders included rural counties in the Panhandle that did not possess the hospital resources to handle surges in infection and hospital demand. 
 
 A common phenomenon that results from constraints (\ref{eq:transfer_limit})-(\ref{eq:binary_constraint}) is the ``chaining'' of patients being transferred to subsequent adjacent counties. Patient transfers create cascading effects during decision periods as hospitals reach capacity. When transferred patients fill available beds in receiving counties, remaining patients requiring care must be redirected elsewhere, leading to further transfers. In general, we observe less transferred patients for the vaccinated scenario (953 thousand) than the unvaccinated scenario (1.10 million).
 
@@ -254,5 +264,5 @@ A common phenomenon that results from constraints (\ref{eq:transfer_limit})-(\re
 %
 %  \noindent \textbf{Dr. Arda Vanli} is a %professor of ...
 %\end{ieombiography}
-
+ 
 \end{document}
