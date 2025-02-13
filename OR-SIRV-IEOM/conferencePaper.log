@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  12 FEB 2025 23:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  13 FEB 2025 00:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -438,26 +438,26 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 )))
 \@quotelevel=\count416
 \@quotereset=\count417
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 12.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 13.
  (C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (conferencePaper.aux)
 \openout1 = `conferencePaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -527,18 +527,18 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'conferencePaper.bbl' found.
  (conferencePaper.bbl)
-Package biblatex Info: Reference section=0 on input line 12.
-Package biblatex Info: Reference segment=0 on input line 12.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+Package biblatex Info: Reference section=0 on input line 13.
+Package biblatex Info: Reference segment=0 on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
  (C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
  (C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 49.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 50.
 (C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1{C:/Users/alexr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
@@ -548,7 +548,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 [2]
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
 [][]
  []
 
@@ -571,26 +571,31 @@ File: pics/cumulSIRVDynamicsVax0.1.png Graphic file (type png)
 <use pics/cumulSIRVDynamicsVax0.1.png>
 Package pdftex.def Info: pics/cumulSIRVDynamicsVax0.1.png  used on input line 208.
 (pdftex.def)             Requested size: 197.29623pt x 134.14133pt.
-<pics/paperStackedPatientTransfersVax0.1.png, id=35, 821.19368pt x 1634.33443pt>
-File: pics/paperStackedPatientTransfersVax0.1.png Graphic file (type png)
-<use pics/paperStackedPatientTransfersVax0.1.png>
-Package pdftex.def Info: pics/paperStackedPatientTransfersVax0.1.png  used on input line 231.
-(pdftex.def)             Requested size: 201.99121pt x 401.99901pt.
-<pics/paperStackedPatientTransfersNoVax.png, id=36, 821.19368pt x 1634.33443pt>
-File: pics/paperStackedPatientTransfersNoVax.png Graphic file (type png)
-<use pics/paperStackedPatientTransfersNoVax.png>
-Package pdftex.def Info: pics/paperStackedPatientTransfersNoVax.png  used on input line 232.
-(pdftex.def)             Requested size: 201.99121pt x 401.99901pt.
-<pics/paperStackedHeatmapVax0.1.png, id=37, 837.91902pt x 1675.63158pt>
+<pics/paperStackedHeatmapVax0.1.png, id=35, 837.91902pt x 1675.63158pt>
 File: pics/paperStackedHeatmapVax0.1.png Graphic file (type png)
 <use pics/paperStackedHeatmapVax0.1.png>
-Package pdftex.def Info: pics/paperStackedHeatmapVax0.1.png  used on input line 238.
+Package pdftex.def Info: pics/paperStackedHeatmapVax0.1.png  used on input line 216.
 (pdftex.def)             Requested size: 201.99121pt x 403.924pt.
-<pics/paperStackedHeatmapNoVax.png, id=38, 837.91902pt x 1675.63158pt>
+<pics/paperStackedHeatmapNoVax.png, id=36, 837.91902pt x 1675.63158pt>
 File: pics/paperStackedHeatmapNoVax.png Graphic file (type png)
 <use pics/paperStackedHeatmapNoVax.png>
-Package pdftex.def Info: pics/paperStackedHeatmapNoVax.png  used on input line 239.
+Package pdftex.def Info: pics/paperStackedHeatmapNoVax.png  used on input line 217.
 (pdftex.def)             Requested size: 201.99121pt x 403.924pt.
+
+
+[7 <./pics/cumulSIRVDynamicsVax0.1.png>]
+
+[8 <./pics/paperStackedHeatmapVax0.1.png> <./pics/paperStackedHeatmapNoVax.png>]
+<pics/paperStackedPatientTransfersVax0.1.png, id=47, 821.19368pt x 1634.33443pt>
+File: pics/paperStackedPatientTransfersVax0.1.png Graphic file (type png)
+<use pics/paperStackedPatientTransfersVax0.1.png>
+Package pdftex.def Info: pics/paperStackedPatientTransfersVax0.1.png  used on input line 238.
+(pdftex.def)             Requested size: 201.99121pt x 401.99901pt.
+<pics/paperStackedPatientTransfersNoVax.png, id=48, 821.19368pt x 1634.33443pt>
+File: pics/paperStackedPatientTransfersNoVax.png Graphic file (type png)
+<use pics/paperStackedPatientTransfersNoVax.png>
+Package pdftex.def Info: pics/paperStackedPatientTransfersNoVax.png  used on input line 239.
+(pdftex.def)             Requested size: 201.99121pt x 401.99901pt.
 
 
 Package biblatex Warning: Name format 'last-first' deprecated.
@@ -599,11 +604,7 @@ Package biblatex Warning: Name format 'last-first' deprecated.
 
 
 
-[7 <./pics/cumulSIRVDynamicsVax0.1.png>]
-
-[8 <./pics/paperStackedPatientTransfersVax0.1.png> <./pics/paperStackedPatientTransfersNoVax.png>]
-
-[9 <./pics/paperStackedHeatmapVax0.1.png> <./pics/paperStackedHeatmapNoVax.png>]
+[9 <./pics/paperStackedPatientTransfersVax0.1.png> <./pics/paperStackedPatientTransfersNoVax.png>]
 Overfull \hbox (6.35992pt too wide) in paragraph at lines 246--246
 [][]\OT1/ptm/m/n/10 Crokidakis, N. (2020). ``Mod-el-ing the early evo-lu-tion of the COVID-19 in Brazil: Re-sults from a Susceptible--Infectious--
  []
@@ -624,13 +625,13 @@ Package logreq Info: Writing requests to 'conferencePaper.run.xml'.
 Here is how much of TeX's memory you used:
  13818 strings out of 473682
  259508 string characters out of 5719215
- 1102083 words of memory out of 5000000
+ 1102076 words of memory out of 5000000
  36752 multiletter control sequences out of 15000+600000
  579706 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,84p,2074b,1537s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conferencePaper.pdf (11 pages, 4558225 bytes).
+Output written on conferencePaper.pdf (11 pages, 4559284 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
