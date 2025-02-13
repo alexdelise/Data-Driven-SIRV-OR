@@ -221,6 +221,11 @@ Figure~\ref{fig:sir(v)Dynamics} demonstrates the proportions of the SIRV compart
 %We observe that unmet hospital demand peaks around day 100, with total infections peaking approximately twenty days later. Figure~\ref{fig:udInfec} demonstrates how, interestingly, unmet hospital demand slightly increases when vaccine dynamics are introduced in the case study, however there are significantly fewer total infections accross the time horizon. There are many potential explanations for this phenomenon: 
 
 \subsection{Patient Transfers}
+Patient transfers play a critical role in the transmission of infectious diseases, thus they were tracked on all decision periods of our mathematical model. Figure\ref{fig:patientAlloc} displays the patient transfer information for Days 30 and 90 of the model. The thickness of the arrow dictates the volume of the patient transfer, and the direction of the arrow, from tip to tail, demonstrates patients being transfered from county $i$ to county $j$. 
+
+A common phenomenon that results from constraints (\ref{eq:transfer_limit})-(\ref{eq:binary_constraint}) is the ``chaining'' of patients being trasnferred to subsequent adjacent counties. We observe different chains of patient transfers on certain decision periods as transferred patients fill hospital capacities in the counties to which they are transferred, causing the remaining patients who require care to be transferred away. 
+
+
 \begin{figure}
     \centering
     \includegraphics[width=0.43\linewidth]{pics/paperStackedPatientTransfersVax0.1.png}
@@ -236,7 +241,8 @@ Figure~\ref{fig:sir(v)Dynamics} demonstrates the proportions of the SIRV compart
 \end{figure}
 
 \section{Conclusions and Future Work}
-
+% fix patient chaining issue. 
+% 
 \printbibliography[heading=subbibintoc, title={References}]
 
 
