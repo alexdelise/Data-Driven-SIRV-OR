@@ -34,7 +34,7 @@
 
   % Abstract
   \begin{ieomabstract}
-      Pandemics strain healthcare systems worldwide, creating urgent challenges in allocating limited resources like hospital beds while controlling disease spread. Effective patient allocation during such crises is critical to minimizing unmet healthcare demand and ensuring equitable healthcare access across regions. This study addresses these issues by developing a mixed-integer nonlinear mathematical model that integrates Susceptible-Infected-Recovered-Vaccinated (SIRV) epidemic dynamics with patient transfer and allocation to improve patient distribution during outbreaks. Our approach also factors additional disease transmissions caused by the assignment of patients to different regions. Our model minimizes unmet demand for hospital beds and incorporates real-world data in the model parameters. We observe that in large metropolitan areas, where access to healthcare is critical, the vaccinated scenario exhibits significantly lower unmet hospital demand compared to the unvaccinated scenario, an outcome directly tied to the vaccines' success in lowering peak infection rates as demonstrated by the SIR(V) dynamics. The reduction in infection surges not only alleviates hospital capacity strain but also leads to fewer total patient transfers, underscoring the effectiveness of vaccination during pandemics. This research demonstrates the potential to enhance pandemic response strategies. The model provides policymakers and healthcare administrators with a robust, data-driven tool to make informed decisions, reducing strain on overburdened facilities and improving patient outcomes during pandemic scenarios.
+      Pandemics strain healthcare systems worldwide, creating urgent challenges in allocating limited resources like hospital beds while controlling disease spread. Effective patient allocation during such crises is critical to minimizing unmet healthcare demand and ensuring equitable healthcare access across regions. This study addresses these issues by developing a mixed-integer nonlinear mathematical model that integrates Susceptible-Infected-Recovered-Vaccinated (SIRV) epidemic dynamics with patient transfer and allocation to improve patient distribution during outbreaks. Our approach also factors additional disease transmissions caused by the assignment of patients to different regions. Our model minimizes unmet demand per county for hospital beds and incorporates real-world data in the model parameters. We observe that in large metropolitan areas, where access to healthcare is critical, the vaccinated scenario exhibits significantly lower unmet hospital demand compared to the unvaccinated scenario, an outcome directly tied to the vaccines' success in lowering peak infection rates as demonstrated by the SIRV dynamics. The reduction in infection surges not only alleviates hospital capacity strain but also leads to fewer total patient transfers, underscoring the effectiveness of vaccination during pandemics. This research demonstrates the potential to enhance pandemic response strategies. The model provides policymakers and healthcare administrators with a robust, data-driven tool to make informed decisions, reducing strain on overburdened facilities and improving patient outcomes during pandemic scenarios.
   \end{ieomabstract}
 
   % Keywords
@@ -45,7 +45,6 @@
 \section{Introduction}
 COVID-19 has presented significant obstacles for both detection and containment, particularly due to limited detection capabilities and varying incubation periods \parencite{li2020modeling, lauer2020incubation, meyerowitz2020systematic}. These challenges underscore the importance of refined epidemiological tracking and data-driven estimates of disease spread within populations when addressing issues that arise in pandemic scenarios. In general, compartmental epidemiological modeling and vaccination allocation strategies, especially when guided by precise data, can substantially moderate infection trajectories, even under moderate coverage \parencite{waseel2024assessing}. Optimization-based methods have also demonstrated that strategic patient allocation can reduce overwhelming hospital demands, reflecting how operational and epidemiological approaches must align to mitigate pandemic impacts \parencite{sarkar2021covid}. These foundational insights on COVID-19 highlight the importance of robust modeling frameworks for patient allocation and the dynamic nature of disease spread.
 
-\section{Literature Review}
 Addressing pandemic surges in hospital demand requires systematic approaches to patient allocation that balance efficiency and equity in resource use. One stream of research leverages multi-objective linear programming to manage both ICU and non-ICU resources, demonstrating how coordinated decision-making can effectively limit hospital overload \parencite{aydin2022analyses}. Similarly, dynamic balancing methods based on forecasts of hospital bed occupancy have been shown to shift incoming patients among hospitals or regions, preventing local bottlenecks and ensuring smoother operations \parencite{dijkstra2023dynamic}. Robust multi-objective frameworks further integrate daily patient assignments with longer-term location planning into a single model, minimizing patient rejections, travel distances, and facility installation costs \parencite{eriskin2024robust}. Studies also highlight that tightly coupling patient routing with broader healthcare operations can significantly enhance service efficiency \parencite{yinusa2023optimizing, shi2023data}. By considering factors such as distance, inter-facility cooperation, bed capacity, and infection levels, these approaches emphasize the complexity of allocation decisions and the importance of dynamic, data-informed strategies for managing new COVID-19 cases during pandemics \parencite{sarkar2021covid}.
 
 Compartmental disease models in literature capture intricate features of COVID-19 dynamics, such as partial immunity, quarantine policies, and heterogeneous transmission environments.~\textcite{li2020modeling} and \textcite{crokidakis2020modeling} have demonstrated that under-detection of confirmed cases can skew estimates of infection prevalence, prompting modifications to standard Susceptible-Exposed-Infected-Recovered (SEIR) frameworks. Others incorporate fractional-order mathematics or time-varying encounter networks to reflect the nuanced spread occurring in real-world transit systems \parencite{koziol2020fractional, mo2021modeling}. In some cases, interventions such as city-wide quarantine have been simulated in SEIR models to quantify the impact of lock down measures \parencite{hou2020effectiveness, he2020seir}. Meanwhile, data-driven spatial risk classification and progressive vaccination plans have connected epidemiological models to tangible operational decisions, showing how high-risk locations can serve as entry points for disease control measures \parencite{hong2024data, bennouna2023covid}. Broader surveys also highlight the relationship between epidemic outbreaks and supply chain disruptions, emphasizing the critical need to effectively allocate patients to hospitals under high demand for scarce pandemic resources like vaccines \parencite{queiroz2022impacts, anastassopoulou2020data}.
@@ -60,17 +59,17 @@ With this research in mind, there still remains a pressing need to integrate epi
 \subsection{SIRV Modeling}
 The Susceptible-Infected-Recovered (SIR) epidemiological model of disease spread is a basic but popular method for predicting disease dynamics in a homogeneous population of individuals \parencite{longini1986generalized}. The discretized difference equation formulation of the SIR model is 
 \begin{align*}
-    S^{t+1} &= S^t - \frac{\beta S^t I^t}{N} && %\label{eq:s_basic} \\
-    I^{t+1} &= I^t + \frac{\beta S^t I^t}{N} - \gamma I^t && %\label{eq:i_basic} \\
+    S^{t+1} &= S^t - \frac{\beta S^t I^t}{N} &&\\ %\label{eq:s_basic} \\
+    I^{t+1} &= I^t + \frac{\beta S^t I^t}{N} - \gamma I^t &&\\ %\label{eq:i_basic} \\
     R^{t+1} &= R^t + \gamma I^t && %\label{eq:r_basic}
 \end{align*}
 where $S^t$, $I^t$, $R^t$ represent the number of susceptible, infected, and recovered individuals, respectively, at time $t$. The parameters $\beta$ and $\gamma$ denote the disease's transmission rate and recovery rate, respectively, and $N$ represents the total population size. 
 
-The Susceptible-Infected-Recovered-Vaccinated (SIRV) epidemiological model extends the basic SIR model to account for vaccination dynamics and immunity loss, making it suitable for predicting disease spread in a population with vaccination interventions. The discretized difference equation formulation of the SIRV model is given as:
+The SIRV epidemiological model extends the basic SIR model to account for vaccination dynamics and immunity loss, making it suitable for predicting disease spread in a population with vaccination interventions. The discretized difference equation formulation of the SIRV model is given as:
 \begin{align*}
-    S^{t+1} &= S^t - \frac{\beta S^t I^t}{N} - \lambda S^t + \omega V^t + q R^t && %\label{eq:susceptibleV} \\
-    I^{t+1} &= I^t + \frac{\beta S^t I^t}{N} + \frac{\beta \ell V^t I^t}{N} - \gamma I^t &&% \label{eq:infectedV} \\
-    V^{t+1} &= V_i^t + \lambda S^{t} - \omega V^t - \frac{\beta \ell V^t I^t}{N} && %\label{eq:vaccinatedV} \\
+    S^{t+1} &= S^t - \frac{\beta S^t I^t}{N} - \lambda S^t + \omega V^t + q R^t &&\\ %\label{eq:susceptibleV} \\
+    I^{t+1} &= I^t + \frac{\beta S^t I^t}{N} + \frac{\beta \ell V^t I^t}{N} - \gamma I^t &&\\% \label{eq:infectedV} \\
+    V^{t+1} &= V_i^t + \lambda S^{t} - \omega V^t - \frac{\beta \ell V^t I^t}{N} &&\\ %\label{eq:vaccinatedV} \\
     R^{t+1} &= R^t + \gamma I^t - q R^t && %\label{eq:recoveredV}
 \end{align*}
 where $S^t$, $I^t$, $R^t$, and $V^t$ represent the number of susceptible, infected, recovered, and vaccinated individuals, respectively, at time $t$. The parameters $\beta$, $\gamma$, $\lambda$, $q$, $\omega$, and $\ell$ denote the disease's transmission rate, recovery rate, vaccination rate, natural immunity loss rate, vaccinated immunity loss rate, and leaky vaccine rate, respectively, while $N$ represents the total population size.
@@ -145,16 +144,14 @@ The objective function (\ref{eq:objective}) minimizes the average unmet hospital
 Due to the formulation of the SIRV epidemiological model, there arises nonlinearity in the constraints of our model. Specifically, constraints (\ref{eq:susceptible})-(\ref{eq:infected_transfer}) have the number of susceptible and infected people multiplied together ($S_i^t I_i^t$) and constraint (\ref{eq:vaccinated}) has the number of vaccinated and infected people multiplied together ($V_i^t I_i^t$). It is often computationally expensive and inefficient to solve large-scale nonlinear models, thus we transform our nonlinear constraints via McCormick Envelopes to linearize them \parencite{mccormick1976computability}. Linearization ensures that that the mathematical model is easier to solve computationally while retaining the model's accuracy.
 
 McCormick Envelopes are used to linearize bivariable nonlinear equations where each variable has specific upper and lower bounds. Given an equation $ z = xy $, were $x$ and $y$ are variables with upper and lower bounds $ x_u, y_u$ and $x_l, y_l$, respectively, the general linearization becomes 
-\[
-    \begin{aligned}
-        \min \quad & z \\
+\begin{align*}
+        \min \quad & z \nonumber \\
         \text{s.t.} \quad 
         &z \geq x_l y + x y_l - x_l y_l \\
         &z \geq x_u y + x y_u - x_u y_u \\
         &z \leq x_u y + x y_l - x_u y_l \\
         &z \leq x y_u + x_l y - x_l y_u.
-    \end{aligned}
-\]
+\end{align*}
 
 In our model, we transform our nonlinear constraints (\ref{eq:susceptible})-(\ref{eq:vaccinated}) as follows. We set the upper and lower bounds of $S_i^t I_i^t, V_i^t$ as $0$ and $N_i$, respectively, and make the substitutions $ Y_i^t = S_i^t I_i^t $ and $ W_i^t = V_i^t I_i^t $. Thus our linearized constraints (2')-(5') become
 \begin{align}
@@ -165,14 +162,14 @@ In our model, we transform our nonlinear constraints (\ref{eq:susceptible})-(\re
 \end{align}
 and we add the following constraints:
 \begin{align}
-    &Y_i^t \geq 0 && \forall i, t \tag{22} \label{eq:Y_nonnegativity} \\
-    &Y_i^t \geq N_i S_i^t + N_i I_i^t - N_i^2 && \forall i, t \tag{23} \label{eq:Y_lower_bound} \\
-    &Y_i^t \leq N_i S_i^t && \forall i, t \tag{24} \label{eq:Y_upper_bound_S} \\
-    &Y_i^t \leq N_i I_i^t && \forall i, t \tag{25} \label{eq:Y_upper_bound_I} \\
-    &W_i^t \geq 0 && \forall i, t \tag{26} \label{eq:W_nonnegativity} \\
-    &W_i^t \geq N_i V_i^t + N_i I_i^t - N_i^2 \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad && \forall i, t \tag{27} \label{eq:W_lower_bound} \\
-    &W_i^t \leq N_i V_i^t && \forall i, t \tag{28} \label{eq:W_upper_bound_X} \\
-    &W_i^t \leq N_i I_i^t && \forall i, t \tag{29} \label{eq:W_upper_bound_I}
+    &Y_i^t \geq 0 && \forall i, t \tag{15} \label{eq:Y_nonnegativity} \\
+    &Y_i^t \geq N_i S_i^t + N_i I_i^t - N_i^2 && \forall i, t \tag{16} \label{eq:Y_lower_bound} \\
+    &Y_i^t \leq N_i S_i^t && \forall i, t \tag{17} \label{eq:Y_upper_bound_S} \\
+    &Y_i^t \leq N_i I_i^t && \forall i, t \tag{18} \label{eq:Y_upper_bound_I} \\
+    &W_i^t \geq 0 && \forall i, t \tag{19} \label{eq:W_nonnegativity} \\
+    &W_i^t \geq N_i V_i^t + N_i I_i^t - N_i^2 \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad && \forall i, t \tag{20}\label{eq:W_lower_bound} \\
+    &W_i^t \leq N_i V_i^t && \forall i, t \tag{21} \label{eq:W_upper_bound_X} \\
+    &W_i^t \leq N_i I_i^t && \forall i, t \tag{22} \label{eq:W_upper_bound_I}
 \end{align}
 
 \subsubsection{Model Assumptions}
@@ -190,7 +187,7 @@ The number of hospital beds required per infection, $\alpha_i^t$, for county $i$
 \]
 This value represents the upper limit of the 95\% confidence interval from the hierarchical time series models used in the analysis.
  
-The authors in \textcite{abazari2024allocation} also utilized time-series data from the two aforementioned sources to estimate the infection and recovery rates ($\beta_i$ and $\gamma_i$) on a per-county basis, as well as the initial numbers of susceptible, infected, and recovered individuals ($S_i^0, I_i^0, R_i^0$). To derive these parameters, the first forty days of the study period were analyzed using a robust maximum likelihood estimation method. The infection and recovery rates were also assumed to remain constant throughout the mathematical model's progression.
+The authors in \textcite{abazari2024allocation} also utilized the SIR modeling framework to estimate the infection and recovery rates ($\beta_i$ and $\gamma_i$) on a per-county basis, and to calculate the initial number of susceptible, infected, and recovered individuals ($S_i^0, I_i^0, R_i^0$) for the case study. To derive these parameters, the first forty days of the study period were analyzed using a robust maximum likelihood estimation method. The infection and recovery rates were also assumed to remain constant throughout the mathematical model's progression.
 
 For the vaccine parameters related to effectiveness, we harnessed data from \textcite{zheng2022real} and set $\omega_i = 0.109$ and $\ell_i = 0.3$ for each county. The remaining parameters were selected using an empirical approach, thus we set $q_i = 0.08$ and $\lambda_i = 0.1$ for each county. Finally, the maximum allowable travel distance was set to $D=70$mi.
 
@@ -203,7 +200,7 @@ In this section, we present the results of the mathematical model solved using t
 \subsection{SIRV Dynamics}
 Figure~\ref{fig:sir(v)Dynamics} demonstrates the proportions of the SIRV compartments of out model over the time horizon, with a notable late-stage increase in susceptibility and infections. This rise is driven by waning immunity, where previously recovered individuals lose natural immunity, thus reentering the susceptible group, and vaccinated individuals experience immunity loss, reducing the vaccinated population. As immunity declines and the vaccinated (and thus protected) population decreases, a ``second-wave'' of infection emerges, leading to a resurgence of the susceptible and infected populations. This phenomenon highlights the need for booster vaccines to prevent late stage or other immunity-retaining strategies to late resurgences of disease spread.
 
-When comparing the SIR(V) dynamics between vaccinated and unvaccinated scenarios, the number of susceptible individuals is significantly lower in the vaccinated case, consistent with the expected impact of vaccination. There is also a significant drop in the number of susceptible individuals in the vaccinated scenario due to the impact of vaccines whereas in the unvaccinated scenario, there is a more gradual decline as susceptible individuals become infected. The infected population in the unvaccinated scenario also peaks higher than in the vaccinated scenario, indicating the higher transmission risk associated with a lack of disease prevention and intervention. Finally, the recovered population in the unvaccinated scenario peaks higher than in the vaccinated scenario because vaccinated individuals are less likely to become infected, reducing the overall number of individuals who recover from the disease.
+When comparing the SIRV dynamics between vaccinated and unvaccinated scenarios, the number of susceptible individuals is significantly lower in the vaccinated case, consistent with the expected impact of vaccination. There is also a significant drop in the number of susceptible individuals in the vaccinated scenario due to the impact of vaccines whereas in the unvaccinated scenario, there is a more gradual decline as susceptible individuals become infected. The infected population in the unvaccinated scenario also peaks higher than in the vaccinated scenario, indicating the higher transmission risk associated with a lack of disease prevention and intervention. Finally, the recovered population in the unvaccinated scenario peaks higher than in the vaccinated scenario because vaccinated individuals are less likely to become infected, reducing the overall number of individuals who recover from the disease.
 
 \begin{figure}
     \centering
@@ -247,13 +244,13 @@ We also note a common phenomenon that results from constraints (\ref{eq:transfer
     \centering
     \includegraphics[width=0.43\linewidth]{pics/paperStackedPatientTransfersVax0.1.png}
     \includegraphics[width=0.43\linewidth]{pics/paperStackedPatientTransfersNoVax.png}
-    \caption{Patient Allocation for Vaccinated Scenario (Left) vs. Unvaccinated Scenario (Right)}\label{fig:patientAlloc}
+    \caption{Patient Allocation for Vaccinated Scenario (Blue) vs. Unvaccinated Scenario (Red)}\label{fig:patientAlloc}
 \end{figure}
 
 \section{Conclusions and Future Work}
 This research presents a data-driven mixed-integer nonlinear programming model that integrates SIRV epidemic dynamics with patient transfer decisions to minimize unmet hospital demand during pandemics. By leveraging real-world COVID-19 and Florida healthcare data, the model demonstrates how vaccination and interregional patient transfers interact to affect overall health outcomes. We observe how larger metropolitan regions frequently receive an influx of transferred patients, whereas rural areas often transfer patients away, thus underscoring the importance of geographically targeted strategies. Incorporating vaccines into the framework helped minimize peak infections, though we note how waning vaccination and natural immunity leads to secondary infection surgers and heightened patient transfers. Coordinated vaccination efforts and patient transfer strategies are pivotal for alleviating stress on burdened healthcare facilities to balance better balance healthcare capacity. 
 
-Despite these contributions, the authors highlight several of the aforementioned model assumptions that must be addressed. The vaccine-related parameters were assumed to be the same for all metapopulations and be constant throughout the time horizon. Patient ``chaining'' was also a significant issue wherein individuals were re-transferred across multiple counties as they each reached their healthcare capacity. The mathematical model also did not account for demographic or socioeconomic heterogeneity, which could influence disease spread and vaccine effectiveness alike. 
+Despite these contributions, the authors highlight several of the aforementioned model assumptions that must be addressed. The vaccine-related parameters were assumed to be the same for all metapopulations and be constant throughout the time horizon. Patient ``chaining'' was also a significant issue wherein individuals were re-transferred across multiple counties as they each reached their healthcare capacity. The mathematical model also did not account for demographic or socioeconomic heterogeneity, which could influence disease spread and vaccine effectiveness. 
 
 Recognizing limitations like these provides direction on how strengthen the applicability and realism of the model, thus we propose the following examples. Future research can enhance this model by incorporating demographic and socioeconomic factors such as age, underlying health conditions, and income levels to highlight disparities in disease burden and vaccine access, enabling more equitable resource allocation. Explicitly modeling vaccine distribution, including the number of doses supplied to each region and its logistical challenges, would improve the model's relevance to real-world vaccination efforts. Allowing parameters such as infection, recovery, and vaccination rates to vary over time could better reflect dynamic factors like emerging variants, seasonal trends, and shifting public health policies. Refining patient transfer constraints by limiting re-transfers or imposing higher penalties for multiple handoffs would reduce unrealistic ``chaining'' effects and provide a more accurate depiction of patient flows. Additionally, calibrating vaccination parameters with time-series data would capture the effects of booster campaigns and vaccine waning more precisely. Finally, introducing stochastic elements to represent random variations in infection spread and hospital arrivals would create a more realistic model, enabling policymakers to evaluate strategies under varying levels of uncertainty.
 
@@ -263,8 +260,7 @@ Recognizing limitations like these provides direction on how strengthen the appl
 
 
 \begin{ieombiography}
-  \textbf{Alexander DeLise} is a ...
-  (Limit to 250 words.)
+  \textbf{Alexander DeLise} is a third year undergraduate student at Florida State University in pursuit of a B.S. in Applied and Computational Mathematics and B.S. in Computational Science. His research interests include the field of Operations Research, Optimization, and Quantum Information Science. 
 
   \noindent \textbf{Seyedreza Abazari} is a....
 
