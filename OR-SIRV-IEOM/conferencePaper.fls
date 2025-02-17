@@ -60,6 +60,8 @@ INPUT C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphi
 INPUT C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT .\IEOM_Ref_Config.tex
 INPUT .\IEOM_Ref_Config.tex
 INPUT .\IEOM_Ref_Config.tex
@@ -221,6 +223,7 @@ INPUT .\pics\cumulSIRVDynamicsVax0.1.png
 INPUT .\pics\cumulSIRVDynamicsVax0.1.png
 INPUT .\pics\cumulSIRVDynamicsVax0.1.png
 INPUT .\pics\cumulSIRVDynamicsVax0.1.png
+INPUT C:\Users\alexr\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
 INPUT .\pics\cumulSIRVDynamicsNoVax.png
 INPUT .\pics\cumulSIRVDynamicsNoVax.png
 INPUT .\pics\cumulSIRVDynamicsNoVax.png
@@ -228,6 +231,8 @@ INPUT .\pics\cumulSIRVDynamicsNoVax.png
 INPUT .\pics\cumulSIRVDynamicsNoVax.png
 INPUT .\pics\cumulSIRVDynamicsNoVax.png
 INPUT .\pics\cumulSIRVDynamicsNoVax.png
+INPUT C:\Users\alexr\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\alexr\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT .\pics\totalUnmetDemandVax0.1.png
 INPUT .\pics\totalUnmetDemandVax0.1.png
 INPUT .\pics\totalUnmetDemandVax0.1.png

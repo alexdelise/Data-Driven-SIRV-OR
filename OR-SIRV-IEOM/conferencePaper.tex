@@ -3,6 +3,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{subcaption} 
 \input{IEOM_Ref_Config}
 \addbibresource{references.bib}
 % chktex 36
@@ -11,36 +12,29 @@
 
 
 \begin{document}
-  % Force the body text to 10 pt
-  \fontsize{10}{12}\selectfont
+% Force the body text to 10 pt
+\fontsize{10}{12}\selectfont
 
-  % Title
-  \PaperTitle{Data-Driven Patient Allocation Optimization with Epidemic and Vaccination Modeling }
+% Title
+\PaperTitle{A Mixed-Integer Nonlinear Programming Framework with Epidemiological and Vaccine Modeling for Patient Allocation During Pandemics}
 
-  % Author(s) and affiliation(s)
-  \AuthorBlock{Alexander DeLise$^1$, Seyedreza Abazari$^2$, and Dr. Arda Vanli$^2$}{
-    $^1$Department of Mathematics, $^2$ FAMU-FSU College of Engineering \\
-    Florida State University \\
-    Tallahassee, FL, USA \\
-    ard22l@fsu.edu, sabazari@fsu.edu, oavanli@eng.famu.fsu.edu 
-  }
+% Author(s) and affiliation(s)
+\AuthorBlock{Alexander DeLise$^1$, Seyedreza Abazari$^2$, and Dr. Arda Vanli$^2$}{
+$^1$Department of Mathematics, $^2$FAMU-FSU College of Engineering \\
+Florida State University \\
+Tallahassee, FL, USA \\
+ard22l@fsu.edu, sabazari@fsu.edu, oavanli@eng.famu.fsu.edu 
+}
 
-%   \AuthorBlock{Seyedreza Abazari and Dr. Arda %Vanli}{
-%    FAMU-FSU College of Engineering \\
-%    Florida State University \\
-%    Tallahassee, FL, USA \\
-%    sabazari@fsu.edu, oavanli@eng.famu.fsu.edu
-%  }
+% Abstract
+\begin{ieomabstract}
+    Pandemics strain healthcare systems worldwide, creating urgent challenges in allocating limited resources like hospital beds while controlling disease spread. Effective patient allocation during such crises is critical to minimizing unmet healthcare demand and ensuring equitable healthcare access across regions. This study addresses these issues by developing a mixed-integer nonlinear mathematical model that integrates Susceptible-Infected-Recovered-Vaccinated (SIRV) epidemic dynamics with patient transfer and allocation to improve patient distribution during outbreaks. Our approach also factors additional disease transmissions caused by the assignment of patients to different regions. Our model minimizes unmet demand per county for hospital beds and incorporates real-world data in the model parameters. We observe that in large metropolitan areas, where access to healthcare is critical, the vaccinated scenario exhibits significantly lower unmet hospital demand compared to the unvaccinated scenario, an outcome directly tied to the vaccines' success in lowering peak infection rates as demonstrated by the SIRV dynamics. The reduction in infection surges not only alleviates hospital capacity strain but also leads to fewer total patient transfers, underscoring the effectiveness of vaccination during pandemics. This research demonstrates the potential to enhance pandemic response strategies. The model provides policymakers and healthcare administrators with a robust, data-driven tool to make informed decisions, reducing strain on overburdened facilities and improving patient outcomes during pandemic scenarios.
+\end{ieomabstract}
 
-  % Abstract
-  \begin{ieomabstract}
-      Pandemics strain healthcare systems worldwide, creating urgent challenges in allocating limited resources like hospital beds while controlling disease spread. Effective patient allocation during such crises is critical to minimizing unmet healthcare demand and ensuring equitable healthcare access across regions. This study addresses these issues by developing a mixed-integer nonlinear mathematical model that integrates Susceptible-Infected-Recovered-Vaccinated (SIRV) epidemic dynamics with patient transfer and allocation to improve patient distribution during outbreaks. Our approach also factors additional disease transmissions caused by the assignment of patients to different regions. Our model minimizes unmet demand per county for hospital beds and incorporates real-world data in the model parameters. We observe that in large metropolitan areas, where access to healthcare is critical, the vaccinated scenario exhibits significantly lower unmet hospital demand compared to the unvaccinated scenario, an outcome directly tied to the vaccines' success in lowering peak infection rates as demonstrated by the SIRV dynamics. The reduction in infection surges not only alleviates hospital capacity strain but also leads to fewer total patient transfers, underscoring the effectiveness of vaccination during pandemics. This research demonstrates the potential to enhance pandemic response strategies. The model provides policymakers and healthcare administrators with a robust, data-driven tool to make informed decisions, reducing strain on overburdened facilities and improving patient outcomes during pandemic scenarios.
-  \end{ieomabstract}
-
-  % Keywords
-  \begin{ieomkeywords}
-    COVID-19, Patient Allocation, Data-Driven Optimization, Healthcare Systems, Epidemic Modeling
-  \end{ieomkeywords}
+% Keywords
+\begin{ieomkeywords}
+COVID-19, Patient Allocation, Data-Driven Optimization, Healthcare Systems, Epidemic Modeling
+\end{ieomkeywords}
 
 \section{Introduction}
 COVID-19 has presented significant obstacles for both detection and containment, particularly due to limited detection capabilities and varying incubation periods \parencite{li2020modeling, lauer2020incubation, meyerowitz2020systematic}. These challenges underscore the importance of refined epidemiological tracking and data-driven estimates of disease spread within populations when addressing issues that arise in pandemic scenarios. In general, compartmental epidemiological modeling and vaccination allocation strategies, especially when guided by precise data, can substantially moderate infection trajectories, even under moderate coverage \parencite{waseel2024assessing}. Optimization-based methods have also demonstrated that strategic patient allocation can reduce overwhelming hospital demands, reflecting how operational and epidemiological approaches must align to mitigate pandemic impacts \parencite{sarkar2021covid}. These foundational insights on COVID-19 highlight the importance of robust modeling frameworks for patient allocation and the dynamic nature of disease spread.
@@ -198,54 +192,75 @@ For the vaccine parameters related to effectiveness, we harnessed data from \tex
 In this section, we present the results of the mathematical model solved using the Florida case study in a vaccinated and unvaccinated scenario. The model was solved using the CPLEX solver on GAMS software using all the aforementioned parameters. 
 
 \subsection{SIRV Dynamics}
-Figure~\ref{fig:sir(v)Dynamics} demonstrates the proportions of the SIRV compartments of out model over the time horizon, with a notable late-stage increase in susceptibility and infections. This rise is driven by waning immunity, where previously recovered individuals lose natural immunity, thus reentering the susceptible group, and vaccinated individuals experience immunity loss, reducing the vaccinated population. As immunity declines and the vaccinated (and thus protected) population decreases, a ``second-wave'' of infection emerges, leading to a resurgence of the susceptible and infected populations. This phenomenon highlights the need for booster vaccines to prevent late stage or other immunity-retaining strategies to late resurgences of disease spread.
+Figure~\ref{fig:sirvDynamicsVax} demonstrates the proportions of the SIRV compartments of out model over the time horizon, with a notable late-stage increase in susceptibility and infections. This rise is driven by waning immunity, where previously recovered individuals lose natural immunity, thus reentering the susceptible group, and vaccinated individuals experience immunity loss, reducing the vaccinated population. As immunity declines and the vaccinated (and thus protected) population decreases, a ``second-wave'' of infection emerges, leading to a resurgence of the susceptible and infected populations. This phenomenon highlights the need for booster vaccines to prevent late stage or other immunity-retaining strategies to late resurgences of disease spread.
 
-When comparing the SIRV dynamics between vaccinated and unvaccinated scenarios, the number of susceptible individuals is significantly lower in the vaccinated case, consistent with the expected impact of vaccination. There is also a significant drop in the number of susceptible individuals in the vaccinated scenario due to the impact of vaccines whereas in the unvaccinated scenario, there is a more gradual decline as susceptible individuals become infected. The infected population in the unvaccinated scenario also peaks higher than in the vaccinated scenario, indicating the higher transmission risk associated with a lack of disease prevention and intervention. Finally, the recovered population in the unvaccinated scenario peaks higher than in the vaccinated scenario because vaccinated individuals are less likely to become infected, reducing the overall number of individuals who recover from the disease.
+When comparing the SIRV dynamics between vaccinated and unvaccinated scenarios, Figure~\ref{fig:sirDynamicsNoVax} reveals how the number of susceptible individuals is significantly lower in the vaccinated case, consistent with the expected impact of vaccination. There is also a significant drop in the number of susceptible individuals in the vaccinated scenario due to the impact of vaccines whereas in the unvaccinated scenario, there is a more gradual decline as susceptible individuals become infected. The infected population in the unvaccinated scenario also peaks higher than in the vaccinated scenario, indicating the higher transmission risk associated with a lack of disease prevention and intervention. Finally, the recovered population in the unvaccinated scenario peaks higher than in the vaccinated scenario because vaccinated individuals are less likely to become infected, reducing the overall number of individuals who recover from the disease.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.43\linewidth]{pics/cumulSIRVDynamicsVax0.1.png}
-    \includegraphics[width=0.43\linewidth]{pics/cumulSIRVDynamicsNoVax.png}
-    \caption{Cumulative SIRV and SIR Dynamics in Florida}\label{fig:sir(v)Dynamics}
+    \begin{subfigure}{0.43\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{pics/cumulSIRVDynamicsVax0.1.png}
+        \caption{Cumulative SIRV Dynamics with Vaccination}\label{fig:sirvDynamicsVax}
+    \end{subfigure}
+    \hspace{2em}
+    \begin{subfigure}{0.43\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{pics/cumulSIRVDynamicsNoVax.png}
+        \caption{Cumulative SIR Dynamics without Vaccination}\label{fig:sirDynamicsNoVax}
+    \end{subfigure}
+    \caption{Comparison of Cumulative SIRV and SIR Dynamics in Florida}\label{fig:sirvDynamics}
 \end{figure}
 
 \subsection{Unmet Demand}
-Figure~\ref{fig:udHeatmap} displays the aggregate unmet demand that each Florida county attains during the time horizon. We observe the vast majority of unmet hospital demand populate in south Florida's populous counties like Palm Beach, Broward, and Miami-Dade with Palm Beach approaching an unsatisfied population of ninety thousand. Central Florida also experiences a considerable amount of unmet demand, especially in Orange, Brevard, Hillsborough, and Monroe counties, though at a lower level. Moving north through Florida to the more rural counties, there is little unmet hospital demand compared to its southern counterparts, with Baker county achieving the smallest unmet demand throughout the case study. 
+Figure~\ref{fig:udHeatmap} displays the aggregate unmet demand that each Florida county attains during the time horizon. We observe in Figure~\ref{fig:udHeatmapVax} that in the vaccinated scenario, the vast majority of unmet hospital demand aggregates in south Florida's populous counties like Palm Beach, Broward, and Miami-Dade with Palm Beach approaching an unsatisfied population of ninety thousand. Central Florida also experiences a considerable amount of unmet demand, especially in Orange, Brevard, Hillsborough, and Monroe counties, though at a lower level. Moving north through Florida to the more rural counties, there is little unmet hospital demand compared to its southern counterparts, with Baker county achieving the smallest unmet demand throughout the case study. 
 
-In the unvaccinated scenario, the large south Florida metropolitan areas experience considerably more unmet demand. Miami-Dade county experiences nearly 144 thousand unsatisfied individuals, followed my Broward and Palm Beach counties with over fifty and seventy-five thousand unsatisfied individuals, respectively. Central Florida attains only minimally more unmet demand, highlighted by Hillsborough county, and the more rural counties in the Panhandle, especially Bay county, attain comparatively distributed and low levels of unmet hospital demand. 
+In the unvaccinated scenario, depicted in Figure~\ref{fig:udHeatmapNoVax}, the large south Florida metropolitan areas experience considerably more unmet demand. Miami-Dade county experiences nearly 144 thousand unsatisfied individuals, followed my Broward and Palm Beach counties with over fifty and seventy-five thousand unsatisfied individuals, respectively. Central Florida attains only minimally more unmet demand, highlighted by Hillsborough county, and the more rural counties in the Panhandle, especially Bay county, attain comparatively distributed and low levels of unmet hospital demand. 
 
 The spatial distribution of unmet hospital demand demonstrates where vital healthcare resources and preventative measures, like vaccines, are critical to minimize disease spread, and thus unmet hospital demand and strain on the healthcare system. Large metropolitan areas may require increased resource allocation and strategic planning to prevent hospital overcrowding and ensure adequate care for their larger infected populations. In contrast, rural areas, which experience lower patient transfer volumes and fewer total infections, generally face less strain on their healthcare systems and can manage demand more effectively.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.43\linewidth]{pics/totalUnmetDemandVax0.1.png}
-    \includegraphics[width=0.43\linewidth]{pics/totalUnmetDemandNoVax.png}
-   \caption{Aggregate Unmet Demand Heatmap for Vaccinated Scenario (Blue) vs. Unvaccinated Scenario (Red)}\label{fig:udHeatmap}
+    \begin{subfigure}{0.43\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{pics/totalUnmetDemandVax0.1.png}
+        \caption{Aggregate Unmet Demand Heatmap for Vaccinated Scenario}\label{fig:udHeatmapVax}
+    \end{subfigure}
+    \hspace{2em}
+    \begin{subfigure}{0.43\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{pics/totalUnmetDemandNoVax.png}
+        \caption{Aggregate Unmet Demand Heatmap for Unvaccinated Scenario}\label{fig:udHeatmapNoVax}
+    \end{subfigure}
+    \caption{Comparison of Aggregate Unmet Demand in Vaccinated vs. Unvaccinated Scenarios}\label{fig:udHeatmap}
 \end{figure}
-%\begin{figure}
-%    \centering
-%    \includegraphics[width=0.42\linewidth]{pics/totalUnmetDemandComparison.png}
-%    \includegraphics[width=0.48\linewidth]{pics/totalInfectionComparison.png}
-%    \caption{Total Unmet Hospital and Demand Infections Across Decision Periods}\label{fig:udInfec}
-%\end{figure}
 
-%We observe that unmet hospital demand peaks around day 100, with total infections peaking approximately twenty days later. Figure~\ref{fig:udInfec} demonstrates how, interestingly, unmet hospital demand slightly increases when vaccine dynamics are introduced in the case study, however there are significantly fewer total infections across the time horizon. There are many potential explanations for this phenomenon: 
 
 \subsection{Patient Transfers}
 Patient transfers play a critical role in the transmission of infectious diseases, thus they were tracked on all decision periods of our mathematical model. Figure~\ref{fig:patientAlloc} displays the patient transfer information for Days 30 and 90 of the model. The thickness of the arrow dictates the volume of the patient transfer, and the direction of the arrow, from tail to tip, demonstrates patients being transferred from county $i$ to county $j$.  
 
-We omit the graphs of the daily in- and out-degrees of each county for Florida patient travel in both scenarios, though we list some of the key insights they reveal. In the vaccinated scenario, large metropolitan counties like Palm Beach, Orange, and Duval counties repeatedly appear as ``receivers'' of large patient volumes. In general, the large metropolitan areas often send and receive large volumes of patients as they have larger hospital capacities, though a larger number of infections. Other more rural counties, like those in the Panhandle, regularly export patients to nearby regions since they tend to have limited healthcare capacity relative to their infection surges, making them consistent ``senders''. We also observe that with the waning of vaccine effectiveness and immunity observed in Figure~\ref{fig:sir(v)Dynamics}, patient transfer drastically increases to account for the surge in infections. Finally, patient transfers occurred consistently throughout the time horizon, indicating that despite vaccination efforts, hospital capacity constraints remained a persistent challenge, necessitating ongoing redistribution of patients to balance demand across regions. 
+We omit the graphs of the daily in- and out-degrees of each county for Florida patient travel in both scenarios, though we list some of the key insights they reveal. In the vaccinated scenario, as outlined in Figure~\ref{fig:patientAllocVax} large metropolitan counties like Palm Beach, Orange, and Duval counties repeatedly appear as ``receivers'' of large patient volumes. In general, the large metropolitan areas often send and receive large volumes of patients as they have larger hospital capacities, though a larger number of infections. Other more rural counties, like those in the Panhandle, regularly export patients to nearby regions since they tend to have limited healthcare capacity relative to their infection surges, making them consistent ``senders''. We also observe that with the waning of vaccine effectiveness and immunity observed in Figure~\ref{fig:sirvDynamicsVax}, patient transfer drastically increases to account for the surge in infections. Finally, patient transfers occurred consistently throughout the time horizon, indicating that despite vaccination efforts, hospital capacity constraints remained a persistent challenge, necessitating ongoing redistribution of patients to balance demand across regions. 
 
-In the unvaccinated scenario, due to a higher peak of infection levels than in the vaccinated scenario, overall patient transfers tend to be larger and occur more frequently. The receivers once again included metropolitan areas with large hospital capacities, including Miami-Dade, Broward, Hillsborough, Orange, and Duval counties, and the senders included rural counties in the Panhandle that did not possess the hospital resources to handle surges in infection and hospital demand. Unlike in the vaccinated scenario, patient transfers were initially very high, later decreasing, before finally increasing once again during the ``second wave'' of infections. 
+Figure~\ref{fig:patientAllocNoVax} portrays how in the unvaccinated scenario, due to a higher peak of infection levels than in the vaccinated scenario, overall patient transfers tend to be larger and occur more frequently. The receivers once again included metropolitan areas with large hospital capacities, including Miami-Dade, Broward, Hillsborough, Orange, and Duval counties, and the senders included rural counties in the Panhandle that did not possess the hospital resources to handle surges in infection and hospital demand. Unlike in the vaccinated scenario, patient transfers were initially very high, later decreasing, before finally increasing once again during the ``second wave'' of infections. 
 
 We also note a common phenomenon that results from constraints (\ref{eq:transfer_limit})-(\ref{eq:binary_constraint}), that is, the ``chaining'' of patients being transferred to subsequent adjacent counties. Patient transfers create cascading effects during decision periods as hospitals reach capacity. When transferred patients fill available beds in receiving counties, remaining patients requiring care must be redirected elsewhere, leading to further transfers. In general, we observe less transferred patients for the vaccinated scenario (953 thousand) than the unvaccinated scenario (1.10 million).
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.43\linewidth]{pics/paperStackedPatientTransfersVax0.1.png}
-    \includegraphics[width=0.43\linewidth]{pics/paperStackedPatientTransfersNoVax.png}
-    \caption{Patient Allocation for Vaccinated Scenario (Blue) vs. Unvaccinated Scenario (Red)}\label{fig:patientAlloc}
+    \begin{subfigure}{0.43\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{pics/paperStackedPatientTransfersVax0.1.png}
+        \caption{Patient Allocation for Vaccinated Scenario}\label{fig:patientAllocVax}
+    \end{subfigure}
+    \hspace{2em}
+    \begin{subfigure}{0.43\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{pics/paperStackedPatientTransfersNoVax.png}
+        \caption{Patient Allocation for Unvaccinated Scenario}\label{fig:patientAllocNoVax}
+    \end{subfigure}
+    \caption{Comparison of Patient Allocation in Vaccinated vs. Unvaccinated Scenarios}\label{fig:patientAlloc}
 \end{figure}
+
 
 \section{Conclusions and Future Work}
 This research presents a data-driven mixed-integer nonlinear programming model that integrates SIRV epidemic dynamics with patient transfer decisions to minimize unmet hospital demand during pandemics. By leveraging real-world COVID-19 and Florida healthcare data, the model demonstrates how vaccination and interregional patient transfers interact to affect overall health outcomes. We observe how larger metropolitan regions frequently receive an influx of transferred patients, whereas rural areas often transfer patients away, thus underscoring the importance of geographically targeted strategies. Incorporating vaccines into the framework helped minimize peak infections, though we note how waning vaccination and natural immunity leads to secondary infection surgers and heightened patient transfers. Coordinated vaccination efforts and patient transfer strategies are pivotal for alleviating stress on burdened healthcare facilities to balance better balance healthcare capacity. 
@@ -260,11 +275,11 @@ Recognizing limitations like these provides direction on how strengthen the appl
 
 
 \begin{ieombiography}
-  \textbf{Alexander DeLise} is a third year undergraduate student at Florida State University in pursuit of a B.S. in Applied and Computational Mathematics and B.S. in Computational Science. His research interests include the field of Operations Research, Optimization, and Quantum Information Science. 
+  \textbf{Alexander DeLise} is a second-year undergraduate student at Florida State University in pursuit of a B.S. in Applied and Computational Mathematics and B.S. in Computational Science. His research interests include the field of Operations Research, Industrial Engineering, Optimization, and Quantum Information Science. 
 
   \noindent \textbf{Seyedreza Abazari} is a....
 
-  \noindent \textbf{Dr. Arda Vanli} is a %professor of ...
+  \noindent \textbf{Dr. Arda Vanli} is a Professor in the Industrial and Manufacturing Engineering (IME) Department at Florida A\&M University and Florida State University, College of Engineering. Dr. Vanli's research interests lie in the general area of applied industrial statistics and data analytics with applications in quality and reliability improvement in modern manufacturing processes, risk and vulnerability analysis for natural disasters and infectious disease data analysis. His research is published in journals including, Quality Engineering, Quality and Reliability Engineering International, Technometrics, IIE Transactions, IEEE Transactions on Semiconductor Manufacturing and Mechanical Systems and Signal Processing. He completed his Ph.D. in Industrial Engineering and Operations Research at the Pennsylvania State University, University Park, in August 2007. He received his M.S. degree in Mechanical Engineering from the Pennsylvania State University, University Park, PA in 2000 and his B.S. degree in Mechanical Engineering from the Middle East Technical University, Ankara, Turkey in 1998.
 \end{ieombiography}
  
 \end{document}
