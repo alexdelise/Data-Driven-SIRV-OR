@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  17 FEB 2025 21:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  20 FEB 2025 17:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -544,6 +544,13 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
+
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 43.
 (C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -551,7 +558,21 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 ]
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
+
 [2]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
 
 [3]
 Underfull \hbox (badness 10000) in paragraph at lines 126--128
@@ -563,13 +584,34 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
+
 [4]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
 
 [5]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 178.
  (C:\Users\alexr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
 
 [6]
 <pics/cumulSIRVDynamicsVax0.1.png, id=33, 742.9356pt x 505.1673pt>
@@ -584,6 +626,13 @@ Package pdftex.def Info: pics/cumulSIRVDynamicsNoVax.png  used on input line 209
 (pdftex.def)             Requested size: 201.99121pt x 137.3451pt.
 
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
+
 [7 <./pics/cumulSIRVDynamicsVax0.1.png> <./pics/cumulSIRVDynamicsNoVax.png>]
 <pics/totalUnmetDemandVax0.1.png, id=42, 585.79997pt x 616.35986pt>
 File: pics/totalUnmetDemandVax0.1.png Graphic file (type png)
@@ -596,6 +645,13 @@ File: pics/totalUnmetDemandNoVax.png Graphic file (type png)
 Package pdftex.def Info: pics/totalUnmetDemandNoVax.png  used on input line 232.
 (pdftex.def)             Requested size: 201.99121pt x 212.52211pt.
 
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
 
 [8 <./pics/totalUnmetDemandVax0.1.png> <./pics/totalUnmetDemandNoVax.png>]
 <pics/paperStackedPatientTransfersVax0.1.png, id=49, 821.19368pt x 1634.33443pt>
@@ -610,6 +666,13 @@ Package pdftex.def Info: pics/paperStackedPatientTransfersNoVax.png  used on inp
 (pdftex.def)             Requested size: 209.04442pt x 416.03905pt.
 
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
+
 [9 <./pics/paperStackedPatientTransfersVax0.1.png> <./pics/paperStackedPatientTransfersNoVax.png>]
 
 Package biblatex Warning: Name format 'last-first' deprecated.
@@ -623,9 +686,30 @@ Overfull \hbox (6.35992pt too wide) in paragraph at lines 274--274
 
 
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
+
 [10]
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
+
 [11]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.44493pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.44493pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.44493pt}.
 
 [12] (conferencePaper.aux)
  ***********
@@ -639,13 +723,13 @@ Package logreq Info: Writing requests to 'conferencePaper.run.xml'.
 Here is how much of TeX's memory you used:
  13948 strings out of 473682
  262200 string characters out of 5719215
- 1103986 words of memory out of 5000000
+ 1104086 words of memory out of 5000000
  36879 multiletter control sequences out of 15000+600000
  581332 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,84p,2074b,1537s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conferencePaper.pdf (12 pages, 3871824 bytes).
+Output written on conferencePaper.pdf (12 pages, 3872323 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
