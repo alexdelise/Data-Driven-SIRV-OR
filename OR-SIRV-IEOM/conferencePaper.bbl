@@ -664,6 +664,68 @@
       \field{pages}{1471\bibrangedash 1518}
       \range{pages}{48}
     \endentry
+    \entry{FloridaDepartmentHealth2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=8d22239cb924b7c5953b55058feb397e}{%
+           family={{Florida Department of Health}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d22239cb924b7c5953b55058feb397e}
+      \strng{fullhash}{8d22239cb924b7c5953b55058feb397e}
+      \strng{fullhashraw}{8d22239cb924b7c5953b55058feb397e}
+      \strng{bibnamehash}{8d22239cb924b7c5953b55058feb397e}
+      \strng{authorbibnamehash}{8d22239cb924b7c5953b55058feb397e}
+      \strng{authornamehash}{8d22239cb924b7c5953b55058feb397e}
+      \strng{authorfullhash}{8d22239cb924b7c5953b55058feb397e}
+      \strng{authorfullhashraw}{8d22239cb924b7c5953b55058feb397e}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online Dashboard}
+      \field{note}{Accessed: 2021-08-10}
+      \field{title}{Florida Department of Health COVID-19 Response}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.floridahealth.gov/programs-and-services/emergency-preparedness-and-response/covid-19/index.html
+      \endverb
+      \verb{url}
+      \verb https://www.floridahealth.gov/programs-and-services/emergency-preparedness-and-response/covid-19/index.html
+      \endverb
+    \endentry
+    \entry{FloridaHospitalAssociation2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=43cc1d783dc0aa0eb9bbc8c933702ea4}{%
+           family={{Florida Hospital Association}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{fullhash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{fullhashraw}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{bibnamehash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{authorbibnamehash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{authornamehash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{authorfullhash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{authorfullhashraw}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online Resource}
+      \field{note}{Accessed: 2021-08-10}
+      \field{title}{Florida COVID-19 Hospitalization Update}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.fha.org/Coronavirus
+      \endverb
+      \verb{url}
+      \verb https://www.fha.org/Coronavirus
+      \endverb
+    \endentry
     \entry{guillon2021inter}{article}{}{}
       \name{author}{5}{}{%
         {{hash=601f5f46d2862446bb77634583408054}{%

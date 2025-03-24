@@ -4,6 +4,8 @@
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{subcaption} 
+\usepackage{xcolor}
+\usepackage{wrapfig}
 \input{IEOM_Ref_Config}
 \addbibresource{references.bib}
 % chktex 36
@@ -220,11 +222,18 @@ When comparing the SIRV dynamics between vaccinated and unvaccinated scenarios, 
 \end{figure}
 
 \subsection{Unmet Demand}
-Figure~\ref{fig:udHeatmap} compares the aggregate unmet demand that each Florida county attains during the time horizon. We observe in Figure~\ref{fig:udHeatmapVax} that in the vaccinated scenario, the vast majority of unmet hospital demand aggregates in south Florida's populous counties like Palm Beach, Broward, and Miami-Dade with Palm Beach approaching an unsatisfied population of ninety thousand. Central Florida also experiences a considerable amount of unmet demand, especially in Orange, Brevard, Hillsborough, and Monroe counties, though at a lower level. Moving north through Florida to the more rural counties, there is little unmet hospital demand compared to its southern counterparts, with Baker county achieving the smallest unmet demand throughout the case study. 
+{\color{blue} Figure~\ref{fig:udHeatmap} compares the aggregate unmet demand that each Florida county attains during the entire planning time horizon (155 days). In both the vaccinated and unvaccinated scenarios, aggregate unmet hospital demand steadily rises until its peak on day 100, where it begins decreasing as patients are distributed across Florida.}
+
+
+We observe in Figure~\ref{fig:udHeatmapVax} that in the vaccinated scenario, the vast majority of unmet hospital demand aggregates in south Florida's populous counties like Palm Beach, Broward, and Miami-Dade with Palm Beach approaching an unsatisfied population of ninety thousand. Central Florida also experiences a considerable amount of unmet demand, especially in Orange, Brevard, Hillsborough, and Monroe counties, though at a lower level. Moving north through Florida to the more rural counties, there is little unmet hospital demand compared to its southern counterparts, with Baker county achieving the smallest unmet demand throughout the case study. 
 
 In the unvaccinated scenario, depicted in Figure~\ref{fig:udHeatmapNoVax}, the large south Florida metropolitan areas experience considerably more unmet demand. Miami-Dade county experiences nearly 144 thousand unsatisfied individuals, followed my Broward and Palm Beach counties with over fifty and seventy-five thousand unsatisfied individuals, respectively. Central Florida attains only minimally more unmet demand, highlighted by Hillsborough county, and the more rural counties in the Panhandle, especially Bay county, attain comparatively distributed and low levels of unmet hospital demand. 
 
 The spatial distribution of unmet hospital demand demonstrates where vital healthcare resources and preventative measures, like vaccines, are critical to minimize disease spread, and thus unmet hospital demand and strain on the healthcare system. Large metropolitan areas may require increased resource allocation and strategic planning to prevent hospital overcrowding and ensure adequate care for their larger infected populations. In contrast, rural areas, which experience lower patient transfer volumes and fewer total infections, generally face less strain on their healthcare systems and can manage demand more effectively.
+
+{\color{blue}
+Similar patterns emerge in historical COVID-19 hospitalization data from Florida, reinforcing our model's findings about high unmet hospital demand in metropolitan centers. The Florida Hospital Association reported that ICU occupancy across Florida rose above 90\% capacity during peak infection waves, with South Florida counties, like Broward and Miami-Dade, activating emergency response measures to handle overflowing admissions \parencite{ FloridaHospitalAssociation2021}. These local surges align with our observation that densely populated regions bear the brunt of unmet hospital demand. Statewide data from the Florida Department of Health demonstrated that even moderate increases in COVID-19 cases quickly strained available hospital beds, placing rural counties at risk for partial capacity shortages as patients were transferred to larger health systems \parencite{FloridaDepartmentHealth2021}. We therefore see that the upward trend in unmet hospital demand during Florida's COVID-19 surges corroborate the trends in our model and the necessity of coordinated patient and resource allocation across counties. 
+}
 
 \begin{figure}
     \centering
@@ -252,7 +261,7 @@ Figure~\ref{fig:patientAllocNoVax} portrays how in the unvaccinated scenario, du
 
 We also note a common phenomenon that results from constraints (\ref{eq:transfer_limit})-(\ref{eq:binary_constraint}), that is, the ``chaining'' of patients being transferred to subsequent adjacent counties. Patient transfers create cascading effects during decision periods as hospitals reach capacity. When transferred patients fill available beds in receiving counties, remaining patients requiring care must be redirected elsewhere, leading to further transfers. In general, we observe less transferred patients for the vaccinated scenario (953 thousand) than the unvaccinated scenario (1.10 million).
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \begin{subfigure}{0.445\linewidth}
         \centering
@@ -268,11 +277,27 @@ We also note a common phenomenon that results from constraints (\ref{eq:transfer
     \caption{Comparison of Patient Allocation in Vaccinated vs. Unvaccinated Scenarios}\label{fig:patientAlloc}
 \end{figure}
 
+{\color{blue}
+\section{Discussion of Policy Implications}
+\subsection{Targeted Vaccination Campaigns}
+From a policy standpoint, the data in Section 3.2 suggests that regional heterogeneity in transmission patterns shape vaccination strategies. In other words, “hotspot” areas with higher infection rates and denser populations, e.g. the metropolitan areas Miami-Dade and Broward Counties, should receive proportionally greater vaccine resources early in an outbreak. Targeted vaccination campaigns in such high-risk counties could mitigate the surge capacity required by healthcare facilities, reducing the need for extensive patient transfers, such as the “chaining” effect observed in our model, and in turn, unmet hospital demand. 
+
+Policymakers should thus launch vaccination campaigns in urban centers where contact rates are highest, and hospital capacity is more likely to be exceeded.  As infection hotspots are likely to change over time, policymaker should also continuously monitor case counts and hospital occupancy to dynamically redirect vaccine supplies and respond to shifting hospital demand. The importance of dynamic vaccination campaigns is highlighted by the waning of vaccine efficacy as observed in our study. These late-stage resurgences call for booster programs and ongoing vaccination efforts to preserve the protection afforded by vaccines. Proactive planning can mitigate late spikes in infection rates, and therefore reduce the need for abrupt reallocation of patients and resources. 
+
+\subsection{Optimizing Healthcare Resource Allocation} 
+The unmet demand projections in Figure 2 reveal a contrast between metropolitan counties which are regularly close to capacity, and rural counties which tend to have fewer hospital beds but proportionally lower infection surges. To reiterate patient transfer results discussed in Section 3.3, larger counties like Orange, Hillsborough, and Duval often become receivers whereas many northern rural counties repeatedly send away patients away due to comparatively limited hospital capacity. 
+
+These results underscore the importance of coordinated allocation of hospital resources like beds, staffing, PPE, etc., especially during peak demand. Policymakers and healthcare administrators should consider spatial load balancing that can rapidly redistribute patients among facilities to ensure that no single county is overrun while neighboring counties have spare capacity. One can also implement tiered resource provisioning in vulnerable counties, such as the metropolitan counties that receive a high volume of incoming patients, during forecasted surges. In general, policymakers should anticipate the areas of most risk and implement preemptive measures to prevent the overburdening of healthcare facilities.
+
+\subsection{General Guidance}
+Government agencies could enhance pandemic response by integrating dynamic, real-time decision-making support systems that builds off our SIRV framework and patient transfer insights to continuously reallocate vital hospital resources and vaccines where they are most needed. Efforts like these could help mitigate potential second-waves of infections in conjunction with targeted vaccination campaigns designed to counteract the loss of vaccine immunity. Cost-benefit analyses should weight the financial, logistical, and infection risks of large-scale patient transfers against investment in permanently expanded local health care infrastructure. Moderate infection surges may justify temporary, coordinated patient transfers, while areas with consistent high infection rates, like the metropolitan counties in our study, could benefit from hospital capacity upgrades to meet hospital demand. 
+
+}
 
 \section{Conclusions and Future Work}
 This research presents a data-driven mixed-integer nonlinear programming model that integrates SIRV epidemic dynamics with patient transfer decisions to minimize unmet hospital demand during pandemics. By leveraging real-world COVID-19 and Florida healthcare data, the model demonstrates how vaccination and interregional patient transfers interact to affect overall health outcomes. We observe how larger metropolitan regions frequently receive an influx of transferred patients, whereas rural areas often transfer patients away, thus underscoring the importance of geographically targeted strategies. Incorporating vaccines into the framework helped minimize peak infections, though we note how waning vaccination and natural immunity leads to secondary infection surgers and heightened patient transfers. Coordinated vaccination efforts and patient transfer strategies are pivotal for alleviating stress on burdened healthcare facilities to balance better balance healthcare capacity. 
 
-Despite these contributions, the authors highlight several of the aforementioned model assumptions that must be addressed. The vaccine-related parameters were assumed to be the same for all metapopulations and be constant throughout the time horizon. Patient ``chaining'' was also a significant issue wherein individuals were re-transferred across multiple counties as they each reached their healthcare capacity. The mathematical model also did not account for demographic or socioeconomic heterogeneity, which could influence disease spread and vaccine effectiveness. 
+Despite these contributions, the authors highlight several of the aforementioned model assumptions that must be addressed. The vaccine-related parameters were assumed to be the same for all metapopulations and be constant throughout the time horizon. Patient ``chaining'' was also a significant issue wherein individuals were re-transferred across multiple counties as they each reached their healthcare capacity. {\color{blue} Although we acknowledge the chaining of patient transfers as a limitation of this study, we prioritized the optimal solution of the model, that is, the minimization of unmet hospital demand, and did not introduce additional constraints to prevent the cascading effects.}The mathematical model also did not account for demographic or socioeconomic heterogeneity, which could influence disease spread and vaccine effectiveness. 
 
 Recognizing limitations like these provides direction on how strengthen the applicability and realism of the model, thus we propose the following examples. Future research can enhance this model by incorporating demographic and socioeconomic factors such as age, underlying health conditions, and income levels to highlight disparities in disease burden and vaccine access, enabling more equitable resource allocation. Explicitly modeling vaccine distribution, including the number of doses supplied to each region and its logistical challenges, would improve the model's relevance to real-world vaccination efforts. Allowing parameters such as infection, recovery, and vaccination rates to vary over time could better reflect dynamic factors like emerging variants, seasonal trends, and shifting public health policies. Refining patient transfer constraints by limiting re-transfers or imposing higher penalties for multiple handoffs would reduce unrealistic ``chaining'' effects and provide a more accurate depiction of patient flows. Additionally, calibrating vaccination parameters with time-series data would capture the effects of booster campaigns and vaccine waning more precisely. Finally, introducing stochastic elements to represent random variations in infection spread and hospital arrivals would create a more realistic model, enabling policymakers to evaluate strategies under varying levels of uncertainty.
 

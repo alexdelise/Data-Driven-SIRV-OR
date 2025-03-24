@@ -2415,6 +2415,8 @@
     <bcf:citekey order="32" intorder="1">florida_covid19_hub2023</bcf:citekey>
     <bcf:citekey order="33" intorder="1">abazari2024allocation</bcf:citekey>
     <bcf:citekey order="34" intorder="1">zheng2022real</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">FloridaHospitalAssociation2021</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">FloridaDepartmentHealth2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
