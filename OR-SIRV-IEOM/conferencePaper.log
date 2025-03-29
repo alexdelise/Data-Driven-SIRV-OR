@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  25 MAR 2025 22:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  29 MAR 2025 15:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -662,12 +662,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <pics/totalUnmetDemandVax0.1.png, id=40, 585.79997pt x 616.35986pt>
 File: pics/totalUnmetDemandVax0.1.png Graphic file (type png)
 <use pics/totalUnmetDemandVax0.1.png>
-Package pdftex.def Info: pics/totalUnmetDemandVax0.1.png  used on input line 242.
+Package pdftex.def Info: pics/totalUnmetDemandVax0.1.png  used on input line 241.
 (pdftex.def)             Requested size: 201.99121pt x 212.52211pt.
 <pics/totalUnmetDemandNoVax.png, id=41, 585.79997pt x 616.35986pt>
 File: pics/totalUnmetDemandNoVax.png Graphic file (type png)
 <use pics/totalUnmetDemandNoVax.png>
-Package pdftex.def Info: pics/totalUnmetDemandNoVax.png  used on input line 248.
+Package pdftex.def Info: pics/totalUnmetDemandNoVax.png  used on input line 247.
 (pdftex.def)             Requested size: 201.99121pt x 212.52211pt.
 
 
@@ -682,12 +682,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <pics/paperStackedPatientTransfersVax0.1.png, id=47, 821.19368pt x 1634.33443pt>
 File: pics/paperStackedPatientTransfersVax0.1.png Graphic file (type png)
 <use pics/paperStackedPatientTransfersVax0.1.png>
-Package pdftex.def Info: pics/paperStackedPatientTransfersVax0.1.png  used on input line 268.
+Package pdftex.def Info: pics/paperStackedPatientTransfersVax0.1.png  used on input line 267.
 (pdftex.def)             Requested size: 209.04442pt x 416.03905pt.
 <pics/paperStackedPatientTransfersNoVax.png, id=48, 821.19368pt x 1634.33443pt>
 File: pics/paperStackedPatientTransfersNoVax.png Graphic file (type png)
 <use pics/paperStackedPatientTransfersNoVax.png>
-Package pdftex.def Info: pics/paperStackedPatientTransfersNoVax.png  used on input line 274.
+Package pdftex.def Info: pics/paperStackedPatientTransfersNoVax.png  used on input line 273.
 (pdftex.def)             Requested size: 209.04442pt x 416.03905pt.
 
 
@@ -718,7 +718,7 @@ Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Using 'family-given' now.
 
 
-Overfull \hbox (6.35992pt too wide) in paragraph at lines 310--310
+Overfull \hbox (6.35992pt too wide) in paragraph at lines 309--309
 [][]\OT1/ptm/m/n/10 Crokidakis, N. (2020). ``Mod-el-ing the early evo-lu-tion of the COVID-19 in Brazil: Re-sults from a Susceptible--Infectious--
  []
 
@@ -767,7 +767,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  72i,13n,84p,2074b,1537s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alexr/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conferencePaper.pdf (13 pages, 3864265 bytes).
+Output written on conferencePaper.pdf (13 pages, 3864192 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
