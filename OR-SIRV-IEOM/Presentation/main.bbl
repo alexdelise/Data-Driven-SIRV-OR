@@ -1,0 +1,97 @@
+\begin{thebibliography}{}
+
+\bibitem[Abazari et~al., 2024]{abazari2024allocation}
+Abazari, S., Alisan, O., Vanli, O.~A., and Ozguven, E.~E. (2024).
+\newblock Data-driven patient allocation for healthcare facility optimization
+  under uncertainty with sir dynamics.
+\newblock In {\em 2024 IISE Annual Conference and Expo}. IISE.
+
+\bibitem[Aydin and Cetinkale, 2022]{aydin2022analyses}
+Aydin, N. and Cetinkale, Z. (2022).
+\newblock Analyses on icu and non-icu capacity of government hospitals during
+  the covid-19 outbreak via multi-objective linear programming: An evidence
+  from istanbul.
+\newblock {\em Computers in Biology and Medicine}, 146:105562.
+
+\bibitem[Badr et~al., 2020]{badr2020association}
+Badr, H.~S., Du, H., Marshall, M., Dong, E., Squire, M.~M., and Gardner, L.~M.
+  (2020).
+\newblock Association between mobility patterns and covid-19 transmission in
+  the usa: a mathematical modelling study.
+\newblock {\em The Lancet Infectious Diseases}, 20(11):1247--1254.
+
+\bibitem[Calvetti et~al., 2021]{calvetti2021modeling}
+Calvetti, D., Hoover, A., Rose, J., and Somersalo, E. (2021).
+\newblock Modeling epidemic spread among a commuting population using transport
+  schemes. mathematics 2021, 9, 1861.
+
+\bibitem[Crokidakis, 2020]{crokidakis2020modeling}
+Crokidakis, N. (2020).
+\newblock Modeling the early evolution of the covid-19 in brazil: Results from
+  a susceptible--infectious--quarantined--recovered (siqr) model.
+\newblock {\em International Journal of Modern Physics C}, 31(10):2050135.
+
+\bibitem[Della~Rossa et~al., 2020]{della2020network}
+Della~Rossa, F., Salzano, D., Di~Meglio, A., De~Lellis, F., Coraggio, M.,
+  Calabrese, C., Guarino, A., Cardona-Rivera, R., De~Lellis, P., Liuzza, D.,
+  et~al. (2020).
+\newblock A network model of italy shows that intermittent regional strategies
+  can alleviate the covid-19 epidemic.
+\newblock {\em Nature communications}, 11(1):5106.
+
+\bibitem[Dijkstra et~al., 2023]{dijkstra2023dynamic}
+Dijkstra, S., Baas, S., Braaksma, A., and Boucherie, R.~J. (2023).
+\newblock Dynamic fair balancing of covid-19 patients over hospitals based on
+  forecasts of bed occupancy.
+\newblock {\em Omega}, 116:102801.
+
+\bibitem[{Florida Hospital Association}, 2021]{FloridaHospitalAssociation2021}
+{Florida Hospital Association} (2021).
+\newblock Florida covid-19 hospitalization update.
+\newblock Online Resource.
+\newblock Accessed: 2021-08-10.
+
+\bibitem[Lauer et~al., 2020]{lauer2020incubation}
+Lauer, S.~A., Grantz, K.~H., Bi, Q., Jones, F.~K., Zheng, Q., Meredith, H.~R.,
+  Azman, A.~S., Reich, N.~G., and Lessler, J. (2020).
+\newblock The incubation period of coronavirus disease 2019 (covid-19) from
+  publicly reported confirmed cases: estimation and application.
+\newblock {\em Annals of internal medicine}, 172(9):577--582.
+
+\bibitem[Li et~al., 2020]{li2020modeling}
+Li, Q., Tang, B., Bragazzi, N.~L., Xiao, Y., and Wu, J. (2020).
+\newblock Modeling the impact of mass influenza vaccination and public health
+  interventions on covid-19 epidemics with limited detection capability.
+\newblock {\em Mathematical biosciences}, 325:108378.
+
+\bibitem[McCormick, 1976]{mccormick1976computability}
+McCormick, G.~P. (1976).
+\newblock Computability of global solutions to factorable nonconvex programs:
+  Part i—convex underestimating problems.
+\newblock {\em Mathematical programming}, 10(1):147--175.
+
+\bibitem[NIEHS, 2023]{covid19pvi2023}
+NIEHS (2023).
+\newblock Covid-19 pvi data.
+\newblock \url{https://github.com/COVID19PVI/data/}.
+\newblock Accessed: March 2023.
+
+\bibitem[Parker et~al., 2020]{parker2020optimal}
+Parker, F., Sawczuk, H., Ganjkhanloo, F., Ahmadi, F., and Ghobadi, K. (2020).
+\newblock Optimal resource and demand redistribution for healthcare systems
+  under stress from covid-19.
+\newblock {\em arXiv preprint arXiv:2011.03528}.
+
+\bibitem[USF, 2023]{florida_covid19_hub2023}
+USF (2023).
+\newblock Florida covid-19 hub.
+\newblock \url{https://covid19-usflibrary.hub.arcgis.com/}.
+\newblock Accessed: March 2023.
+
+\bibitem[Zheng et~al., 2022]{zheng2022real}
+Zheng, C., Shao, W., Chen, X., Zhang, B., Wang, G., and Zhang, W. (2022).
+\newblock Real-world effectiveness of covid-19 vaccines: a literature review
+  and meta-analysis.
+\newblock {\em International journal of infectious diseases}, 114:252--260.
+
+\end{thebibliography}
