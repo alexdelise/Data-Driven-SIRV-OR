@@ -1,0 +1,1828 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{abazari2024allocation}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=14017e88993b95d8afeaeeb9390eca54}{%
+           family={Abazari},
+           familyi={A\bibinitperiod},
+           given={Seyedreza},
+           giveni={S\bibinitperiod}}}%
+        {{hash=749ba52b891f97ab176ca86ff26bc338}{%
+           family={Alisan},
+           familyi={A\bibinitperiod},
+           given={Onur},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c509d68520e493dcc733e761cbb2ad62}{%
+           family={Vanli},
+           familyi={V\bibinitperiod},
+           given={Omer\bibnamedelima Arda},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9b091018f2724d8d17b5e7b2cb805dda}{%
+           family={Ozguven},
+           familyi={O\bibinitperiod},
+           given={Eren\bibnamedelima Erman},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IISE}%
+      }
+      \strng{namehash}{240ab284cc359c95bcfcc2c3920a240a}
+      \strng{fullhash}{9eb04d2bf4354d10599b8a6976e20414}
+      \strng{fullhashraw}{9eb04d2bf4354d10599b8a6976e20414}
+      \strng{bibnamehash}{9eb04d2bf4354d10599b8a6976e20414}
+      \strng{authorbibnamehash}{9eb04d2bf4354d10599b8a6976e20414}
+      \strng{authornamehash}{240ab284cc359c95bcfcc2c3920a240a}
+      \strng{authorfullhash}{9eb04d2bf4354d10599b8a6976e20414}
+      \strng{authorfullhashraw}{9eb04d2bf4354d10599b8a6976e20414}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2024 IISE Annual Conference and Expo}
+      \field{month}{5}
+      \field{title}{Data-Driven Patient Allocation for Healthcare Facility Optimization Under Uncertainty with SIR Dynamics}
+      \field{year}{2024}
+    \endentry
+    \entry{anastassopoulou2020data}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9fcc90a390a0eea18cd2de19a00e481a}{%
+           family={Anastassopoulou},
+           familyi={A\bibinitperiod},
+           given={Cleo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=60df723c0bafa5fe0b54a9a292c8618f}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Lucia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=67165c371f052c0e4b5484ae33ebea89}{%
+           family={Tsakris},
+           familyi={T\bibinitperiod},
+           given={Athanasios},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5f6083287e4fef554a86268fe1d3d3e6}{%
+           family={Siettos},
+           familyi={S\bibinitperiod},
+           given={Constantinos},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science San Francisco, CA USA}%
+      }
+      \strng{namehash}{0580aeec85dd69830010d4589deb583f}
+      \strng{fullhash}{3c61822ba1c3e87ca56cc9f09d2fe2bb}
+      \strng{fullhashraw}{3c61822ba1c3e87ca56cc9f09d2fe2bb}
+      \strng{bibnamehash}{3c61822ba1c3e87ca56cc9f09d2fe2bb}
+      \strng{authorbibnamehash}{3c61822ba1c3e87ca56cc9f09d2fe2bb}
+      \strng{authornamehash}{0580aeec85dd69830010d4589deb583f}
+      \strng{authorfullhash}{3c61822ba1c3e87ca56cc9f09d2fe2bb}
+      \strng{authorfullhashraw}{3c61822ba1c3e87ca56cc9f09d2fe2bb}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PloS one}
+      \field{number}{3}
+      \field{title}{Data-based analysis, modelling and forecasting of the COVID-19 outbreak}
+      \field{volume}{15}
+      \field{year}{2020}
+      \field{pages}{e0230405}
+      \range{pages}{-1}
+    \endentry
+    \entry{aydin2022analyses}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=9d5cdb3f98c1d4672a850e21a085cb8e}{%
+           family={Aydin},
+           familyi={A\bibinitperiod},
+           given={Nezir},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9005c33f6b5e0f23d512907770613e97}{%
+           family={Cetinkale},
+           familyi={C\bibinitperiod},
+           given={Zeynep},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8d110ff673e047b6edde93faf3badbf8}
+      \strng{fullhash}{8d110ff673e047b6edde93faf3badbf8}
+      \strng{fullhashraw}{8d110ff673e047b6edde93faf3badbf8}
+      \strng{bibnamehash}{8d110ff673e047b6edde93faf3badbf8}
+      \strng{authorbibnamehash}{8d110ff673e047b6edde93faf3badbf8}
+      \strng{authornamehash}{8d110ff673e047b6edde93faf3badbf8}
+      \strng{authorfullhash}{8d110ff673e047b6edde93faf3badbf8}
+      \strng{authorfullhashraw}{8d110ff673e047b6edde93faf3badbf8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers in Biology and Medicine}
+      \field{title}{Analyses on ICU and non-ICU capacity of government hospitals during the COVID-19 outbreak via multi-objective linear programming: An evidence from Istanbul}
+      \field{volume}{146}
+      \field{year}{2022}
+      \field{pages}{105562}
+      \range{pages}{1}
+    \endentry
+    \entry{badr2020association}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=3080b837b6d9cb3632632c191fbb8570}{%
+           family={Badr},
+           familyi={B\bibinitperiod},
+           given={Hamada\bibnamedelima S},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=5430693a851a0afcda824a8b1cc76b4c}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Hongru},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bde252f605480babc7e7f40a30c426fe}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4bfd52fcb578e8b400682a36a602f5b4}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Ensheng},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9d6d71c906b14e111d276b800a59a5dd}{%
+           family={Squire},
+           familyi={S\bibinitperiod},
+           given={Marietta\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f7e723c32feafa5055d21e2e32886dca}{%
+           family={Gardner},
+           familyi={G\bibinitperiod},
+           given={Lauren\bibnamedelima M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e14ca7bb7c6a82025b4ff3323e3fa282}
+      \strng{fullhash}{cf70ce3c704b85f0a6a1b9119d480a65}
+      \strng{fullhashraw}{cf70ce3c704b85f0a6a1b9119d480a65}
+      \strng{bibnamehash}{cf70ce3c704b85f0a6a1b9119d480a65}
+      \strng{authorbibnamehash}{cf70ce3c704b85f0a6a1b9119d480a65}
+      \strng{authornamehash}{e14ca7bb7c6a82025b4ff3323e3fa282}
+      \strng{authorfullhash}{cf70ce3c704b85f0a6a1b9119d480a65}
+      \strng{authorfullhashraw}{cf70ce3c704b85f0a6a1b9119d480a65}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Lancet Infectious Diseases}
+      \field{number}{11}
+      \field{title}{Association between mobility patterns and COVID-19 transmission in the USA: a mathematical modelling study}
+      \field{volume}{20}
+      \field{year}{2020}
+      \field{pages}{1247\bibrangedash 1254}
+      \range{pages}{8}
+    \endentry
+    \entry{bennouna2023covid}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=85af57ce2bb786fb385240770076552b}{%
+           family={Bennouna},
+           familyi={B\bibinitperiod},
+           given={Amine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5ae52db19e0131c41f4483efe2fd8e45}{%
+           family={Joseph},
+           familyi={J\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=74f17a22d9001809212683213d3003e7}{%
+           family={Nze-Ndong},
+           familyi={N\bibinithyphendelim N\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5fc631899047eb84eeaa6e01069ba04c}{%
+           family={Perakis},
+           familyi={P\bibinitperiod},
+           given={Georgia},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5a31dcf3b8d4cae999669bf878d2a049}{%
+           family={Singhvi},
+           familyi={S\bibinitperiod},
+           given={Divya},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a63392c8e1657c125efa39e00b2b60bd}{%
+           family={Lami},
+           familyi={L\bibinitperiod},
+           given={Omar\bibnamedelima Skali},
+           giveni={O\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1c4678164e9b57152a13c747e6007b42}{%
+           family={Spantidakis},
+           familyi={S\bibinitperiod},
+           given={Yannis},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d1ffb12ab6a7d750c4b0bc8c5d1f4c03}{%
+           family={Thayaparan},
+           familyi={T\bibinitperiod},
+           given={Leann},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cba9ad2756bb6f2d851e25c0c815bba0}{%
+           family={Tsiourvas},
+           familyi={T\bibinitperiod},
+           given={Asterios},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{873b0d86253869e1dfb9766163295242}
+      \strng{fullhash}{5ebcfac0762db6f6f486d18c2d075e7f}
+      \strng{fullhashraw}{5ebcfac0762db6f6f486d18c2d075e7f}
+      \strng{bibnamehash}{5ebcfac0762db6f6f486d18c2d075e7f}
+      \strng{authorbibnamehash}{5ebcfac0762db6f6f486d18c2d075e7f}
+      \strng{authornamehash}{873b0d86253869e1dfb9766163295242}
+      \strng{authorfullhash}{5ebcfac0762db6f6f486d18c2d075e7f}
+      \strng{authorfullhashraw}{5ebcfac0762db6f6f486d18c2d075e7f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Manufacturing \& Service Operations Management}
+      \field{number}{3}
+      \field{title}{COVID-19: Prediction, prevalence, and the operations of vaccine allocation}
+      \field{volume}{25}
+      \field{year}{2023}
+      \field{pages}{1013\bibrangedash 1032}
+      \range{pages}{20}
+    \endentry
+    \entry{calvetti2021modeling}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=ad3a171a02d968bbb28704c4b830b4f1}{%
+           family={Calvetti},
+           familyi={C\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c6821346d60097308cceae6f1d973f42}{%
+           family={Hoover},
+           familyi={H\bibinitperiod},
+           given={AP},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3b6dbb2dad9b76fc0c108970fb2c10d8}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=90f68f31e7256bccf90e6508c67e52eb}{%
+           family={Somersalo},
+           familyi={S\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {s Note: MDPI stays neutral with regard to jurisdictional claims in published~…}%
+      }
+      \strng{namehash}{7d297be9d7ec453f729f339b15789bbc}
+      \strng{fullhash}{3a5b7933252ad274299f48176910b9a2}
+      \strng{fullhashraw}{3a5b7933252ad274299f48176910b9a2}
+      \strng{bibnamehash}{3a5b7933252ad274299f48176910b9a2}
+      \strng{authorbibnamehash}{3a5b7933252ad274299f48176910b9a2}
+      \strng{authornamehash}{7d297be9d7ec453f729f339b15789bbc}
+      \strng{authorfullhash}{3a5b7933252ad274299f48176910b9a2}
+      \strng{authorfullhashraw}{3a5b7933252ad274299f48176910b9a2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Modeling Epidemic Spread among a Commuting Population Using Transport Schemes. Mathematics 2021, 9, 1861}
+      \field{year}{2021}
+    \endentry
+    \entry{chang2021mobility}{article}{}{}
+      \name{author}{7}{ul=2}{%
+        {{hash=adf1d77e69cb1510ef96fb52fcc84f3e}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Serina},
+           giveni={S\bibinitperiod}}}%
+        {{hash=250834340733e5e9b8d29ca5401b996e}{%
+           family={Pierson},
+           familyi={P\bibinitperiod},
+           given={Emma},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b7309d5979903f9e56ec43ebf0d594ad}{%
+           family={Koh},
+           familyi={K\bibinitperiod},
+           given={Pang\bibnamedelima Wei},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0244908a0a303f5cb6001e79cba752bc}{%
+           family={Gerardin},
+           familyi={G\bibinitperiod},
+           given={Jaline},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d082624a72d506c8549bce918cf8fe91}{%
+           family={Redbird},
+           familyi={R\bibinitperiod},
+           given={Beth},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ae60297fec4ebd8eb8083ad2b44d1d2a}{%
+           family={Grusky},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b22cb64499edf27b36b2f84b4666d2e4}
+      \strng{fullhash}{96c2c84f60874306e1e7882bdf8f5bb9}
+      \strng{fullhashraw}{96c2c84f60874306e1e7882bdf8f5bb9}
+      \strng{bibnamehash}{96c2c84f60874306e1e7882bdf8f5bb9}
+      \strng{authorbibnamehash}{96c2c84f60874306e1e7882bdf8f5bb9}
+      \strng{authornamehash}{b22cb64499edf27b36b2f84b4666d2e4}
+      \strng{authorfullhash}{96c2c84f60874306e1e7882bdf8f5bb9}
+      \strng{authorfullhashraw}{96c2c84f60874306e1e7882bdf8f5bb9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{7840}
+      \field{title}{Mobility network models of COVID-19 explain inequities and inform reopening}
+      \field{volume}{589}
+      \field{year}{2021}
+      \field{pages}{82\bibrangedash 87}
+      \range{pages}{6}
+    \endentry
+    \entry{chang2021supporting}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{ul=2}{%
+        {{hash=adf1d77e69cb1510ef96fb52fcc84f3e}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Serina},
+           giveni={S\bibinitperiod}}}%
+        {{hash=faf9e7f92812d6417f38a24f0bbb6553}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Mandy\bibnamedelima L},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=819631e362c1fa52d168e3139fb8e1d9}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b6f87abf9531daef00234cbe9bda5ed2}{%
+           family={Mehrab},
+           familyi={M\bibinitperiod},
+           given={Zakaria},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=8c35c3db222b3a33193123cc725a6269}{%
+           family={Dudakiya},
+           familyi={D\bibinitperiod},
+           given={Komal\bibnamedelima K},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=250834340733e5e9b8d29ca5401b996e}{%
+           family={Pierson},
+           familyi={P\bibinitperiod},
+           given={Emma},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b7309d5979903f9e56ec43ebf0d594ad}{%
+           family={Koh},
+           familyi={K\bibinitperiod},
+           given={Pang\bibnamedelima Wei},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0244908a0a303f5cb6001e79cba752bc}{%
+           family={Gerardin},
+           familyi={G\bibinitperiod},
+           given={Jaline},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d082624a72d506c8549bce918cf8fe91}{%
+           family={Redbird},
+           familyi={R\bibinitperiod},
+           given={Beth},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ae60297fec4ebd8eb8083ad2b44d1d2a}{%
+           family={Grusky},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{19bbbd2b0c3187d73dee40b9f5d4c5ba}
+      \strng{fullhash}{d51b6b64b0ed8495f2c2935ffea35549}
+      \strng{fullhashraw}{d51b6b64b0ed8495f2c2935ffea35549}
+      \strng{bibnamehash}{d51b6b64b0ed8495f2c2935ffea35549}
+      \strng{authorbibnamehash}{d51b6b64b0ed8495f2c2935ffea35549}
+      \strng{authornamehash}{19bbbd2b0c3187d73dee40b9f5d4c5ba}
+      \strng{authorfullhash}{d51b6b64b0ed8495f2c2935ffea35549}
+      \strng{authorfullhashraw}{d51b6b64b0ed8495f2c2935ffea35549}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining}
+      \field{title}{Supporting covid-19 policy response with large-scale mobility-based modeling}
+      \field{year}{2021}
+      \field{pages}{2632\bibrangedash 2642}
+      \range{pages}{11}
+    \endentry
+    \entry{crokidakis2020modeling}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=bff3eb0bbceb22f63d679bd58482d550}{%
+           family={Crokidakis},
+           familyi={C\bibinitperiod},
+           given={Nuno},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific}%
+      }
+      \strng{namehash}{bff3eb0bbceb22f63d679bd58482d550}
+      \strng{fullhash}{bff3eb0bbceb22f63d679bd58482d550}
+      \strng{fullhashraw}{bff3eb0bbceb22f63d679bd58482d550}
+      \strng{bibnamehash}{bff3eb0bbceb22f63d679bd58482d550}
+      \strng{authorbibnamehash}{bff3eb0bbceb22f63d679bd58482d550}
+      \strng{authornamehash}{bff3eb0bbceb22f63d679bd58482d550}
+      \strng{authorfullhash}{bff3eb0bbceb22f63d679bd58482d550}
+      \strng{authorfullhashraw}{bff3eb0bbceb22f63d679bd58482d550}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Modern Physics C}
+      \field{number}{10}
+      \field{title}{Modeling the early evolution of the COVID-19 in Brazil: Results from a Susceptible--Infectious--Quarantined--Recovered (SIQR) model}
+      \field{volume}{31}
+      \field{year}{2020}
+      \field{pages}{2050135}
+      \range{pages}{1}
+    \endentry
+    \entry{della2020network}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=0b294494e6d63ac5a79f3cd73060ce2f}{%
+           family={Della\bibnamedelima Rossa},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=774e8b751fc4d92fb2687e20709f1d9f}{%
+           family={Salzano},
+           familyi={S\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d8ff11b9366b01786f4c85f288bb0a6f}{%
+           family={Di\bibnamedelima Meglio},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e9113ed14132ea83169a9abd5e5cb2e5}{%
+           family={De\bibnamedelima Lellis},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0c4322664c17f580cccba4936dd43c1c}{%
+           family={Coraggio},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a85548c8a32a9e1cba2438bff4f2d674}{%
+           family={Calabrese},
+           familyi={C\bibinitperiod},
+           given={Carmela},
+           giveni={C\bibinitperiod}}}%
+        {{hash=104924638262538dbb5b082cf0bec723}{%
+           family={Guarino},
+           familyi={G\bibinitperiod},
+           given={Agostino},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4d93731582bc2c58ddc11109ab2717dc}{%
+           family={Cardona-Rivera},
+           familyi={C\bibinithyphendelim R\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d964d5ae8957a7fe09db0312a820c87f}{%
+           family={De\bibnamedelima Lellis},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a38e203ab64cccefa91f1b84a3a379cb}{%
+           family={Liuzza},
+           familyi={L\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{722675f058bb2ed5d0a18955179bfddf}
+      \strng{fullhash}{946bb33ce4470cd348308bfcc5373d41}
+      \strng{fullhashraw}{946bb33ce4470cd348308bfcc5373d41}
+      \strng{bibnamehash}{946bb33ce4470cd348308bfcc5373d41}
+      \strng{authorbibnamehash}{946bb33ce4470cd348308bfcc5373d41}
+      \strng{authornamehash}{722675f058bb2ed5d0a18955179bfddf}
+      \strng{authorfullhash}{946bb33ce4470cd348308bfcc5373d41}
+      \strng{authorfullhashraw}{946bb33ce4470cd348308bfcc5373d41}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature communications}
+      \field{number}{1}
+      \field{title}{A network model of Italy shows that intermittent regional strategies can alleviate the COVID-19 epidemic}
+      \field{volume}{11}
+      \field{year}{2020}
+      \field{pages}{5106}
+      \range{pages}{1}
+    \endentry
+    \entry{dijkstra2023dynamic}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=2c2b825ae6d6c4d6dd31668216f08d25}{%
+           family={Dijkstra},
+           familyi={D\bibinitperiod},
+           given={Sander},
+           giveni={S\bibinitperiod}}}%
+        {{hash=752c2fd7fb15a90d20f64b0e8a73a923}{%
+           family={Baas},
+           familyi={B\bibinitperiod},
+           given={Stef},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6572dd7d9c7762921daddb9ed0205fbb}{%
+           family={Braaksma},
+           familyi={B\bibinitperiod},
+           given={Aleida},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9192aa3dab34bb916e2f908ac4a90224}{%
+           family={Boucherie},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7331a62023f31053c34236eeb41b702b}
+      \strng{fullhash}{301958493987cef0e7f286726ea88a86}
+      \strng{fullhashraw}{301958493987cef0e7f286726ea88a86}
+      \strng{bibnamehash}{301958493987cef0e7f286726ea88a86}
+      \strng{authorbibnamehash}{301958493987cef0e7f286726ea88a86}
+      \strng{authornamehash}{7331a62023f31053c34236eeb41b702b}
+      \strng{authorfullhash}{301958493987cef0e7f286726ea88a86}
+      \strng{authorfullhashraw}{301958493987cef0e7f286726ea88a86}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Omega}
+      \field{title}{Dynamic fair balancing of COVID-19 patients over hospitals based on forecasts of bed occupancy}
+      \field{volume}{116}
+      \field{year}{2023}
+      \field{pages}{102801}
+      \range{pages}{1}
+    \endentry
+    \entry{eriskin2024robust}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=537d659ce6eaf17cd61670cd2b2c18df}{%
+           family={Eriskin},
+           familyi={E\bibinitperiod},
+           given={Levent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ab1396c77e0a8a9ae71d9d75dea66406}{%
+           family={Karatas},
+           familyi={K\bibinitperiod},
+           given={Mumtaz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ee04179ea3b8dd82223db7f53d8a5e34}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Yu-Jun},
+           giveni={Y\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1e1a48086cb2fd72ce97b0c0bfaade55}
+      \strng{fullhash}{42e480eda85f76f1ab3b02830e3e0ff2}
+      \strng{fullhashraw}{42e480eda85f76f1ab3b02830e3e0ff2}
+      \strng{bibnamehash}{42e480eda85f76f1ab3b02830e3e0ff2}
+      \strng{authorbibnamehash}{42e480eda85f76f1ab3b02830e3e0ff2}
+      \strng{authornamehash}{1e1a48086cb2fd72ce97b0c0bfaade55}
+      \strng{authorfullhash}{42e480eda85f76f1ab3b02830e3e0ff2}
+      \strng{authorfullhashraw}{42e480eda85f76f1ab3b02830e3e0ff2}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of Operations Research}
+      \field{number}{3}
+      \field{title}{A robust multi-objective model for healthcare resource management and location planning during pandemics}
+      \field{volume}{335}
+      \field{year}{2024}
+      \field{pages}{1471\bibrangedash 1518}
+      \range{pages}{48}
+    \endentry
+    \entry{FloridaHospitalAssociation2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=43cc1d783dc0aa0eb9bbc8c933702ea4}{%
+           family={{Florida Hospital Association}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{fullhash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{fullhashraw}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{bibnamehash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{authorbibnamehash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{authornamehash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{authorfullhash}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \strng{authorfullhashraw}{43cc1d783dc0aa0eb9bbc8c933702ea4}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Online Resource}
+      \field{note}{Accessed: 2021-08-10}
+      \field{title}{Florida COVID-19 Hospitalization Update}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.fha.org/Coronavirus
+      \endverb
+      \verb{url}
+      \verb https://www.fha.org/Coronavirus
+      \endverb
+    \endentry
+    \entry{guillon2021inter}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=601f5f46d2862446bb77634583408054}{%
+           family={Guillon},
+           familyi={G\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=66b7bfb37db884ce90da16f01fc3c228}{%
+           family={Laurent},
+           familyi={L\bibinitperiod},
+           given={Emeline},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4451e7f176afa12456f17917c998a335}{%
+           family={Godillon},
+           familyi={G\bibinitperiod},
+           given={Lucile},
+           giveni={L\bibinitperiod}}}%
+        {{hash=db69486b16c1b291365830a1c93f3aa5}{%
+           family={Kimmoun},
+           familyi={K\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e15463eddbbb42992ea378d381b46bdc}{%
+           family={Grammatico-Guillon},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e850c43b3d721f0acbd2ae64362132bc}
+      \strng{fullhash}{d9619044cc13b437d2d795ccc85fc7a8}
+      \strng{fullhashraw}{d9619044cc13b437d2d795ccc85fc7a8}
+      \strng{bibnamehash}{d9619044cc13b437d2d795ccc85fc7a8}
+      \strng{authorbibnamehash}{d9619044cc13b437d2d795ccc85fc7a8}
+      \strng{authornamehash}{e850c43b3d721f0acbd2ae64362132bc}
+      \strng{authorfullhash}{d9619044cc13b437d2d795ccc85fc7a8}
+      \strng{authorfullhashraw}{d9619044cc13b437d2d795ccc85fc7a8}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Intensive Care Medicine}
+      \field{number}{7}
+      \field{title}{Inter-regional transfers for pandemic surges were associated with reduced mortality rates}
+      \field{volume}{47}
+      \field{year}{2021}
+      \field{pages}{798\bibrangedash 800}
+      \range{pages}{3}
+    \endentry
+    \entry{he2020seir}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=e0a6342bc32c3a926224ea8e51c39b5e}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Shaobo},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d662ff2c98bdf7d3dae369ac425d33b6}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Yuexi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=395a31ff74b4b8fa42bbd5026a3e8bf4}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Kehui},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b4f3bc71d6b55effcc056b073276d4ac}
+      \strng{fullhash}{51c6ab0778e836d0db97bc945cbf6150}
+      \strng{fullhashraw}{51c6ab0778e836d0db97bc945cbf6150}
+      \strng{bibnamehash}{51c6ab0778e836d0db97bc945cbf6150}
+      \strng{authorbibnamehash}{51c6ab0778e836d0db97bc945cbf6150}
+      \strng{authornamehash}{b4f3bc71d6b55effcc056b073276d4ac}
+      \strng{authorfullhash}{51c6ab0778e836d0db97bc945cbf6150}
+      \strng{authorfullhashraw}{51c6ab0778e836d0db97bc945cbf6150}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nonlinear dynamics}
+      \field{title}{SEIR modeling of the COVID-19 and its dynamics}
+      \field{volume}{101}
+      \field{year}{2020}
+      \field{pages}{1667\bibrangedash 1680}
+      \range{pages}{14}
+    \endentry
+    \entry{hong2024data}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a053b3143a271d4a9e96e951cbb9a0e8}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Zhaofu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=bbae32e56704e48bdf6bc9fefc5f917e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yingjie},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a8d0843836292c4f8e05da387e76a44d}{%
+           family={Gong},
+           familyi={G\bibinitperiod},
+           given={Yeming},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=103d9a0a9af894aef3f2c0f22d489c25}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wanying},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a839bc1dbd7da53687fb6608156239e9}
+      \strng{fullhash}{b37300e983d34ca09e64e74ae5fd170e}
+      \strng{fullhashraw}{b37300e983d34ca09e64e74ae5fd170e}
+      \strng{bibnamehash}{b37300e983d34ca09e64e74ae5fd170e}
+      \strng{authorbibnamehash}{b37300e983d34ca09e64e74ae5fd170e}
+      \strng{authornamehash}{a839bc1dbd7da53687fb6608156239e9}
+      \strng{authorfullhash}{b37300e983d34ca09e64e74ae5fd170e}
+      \strng{authorfullhashraw}{b37300e983d34ca09e64e74ae5fd170e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of Operations Research}
+      \field{number}{1}
+      \field{title}{A data-driven spatially-specific vaccine allocation framework for COVID-19}
+      \field{volume}{339}
+      \field{year}{2024}
+      \field{pages}{203\bibrangedash 226}
+      \range{pages}{24}
+    \endentry
+    \entry{hou2020effectiveness}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=6bdfff40d5aa6585822d974bacf93767}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Can},
+           giveni={C\bibinitperiod}}}%
+        {{hash=11930e1f14d17bdc92d0d5a4c8c042ea}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jiaxin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=65c31b021c8ca3b1db1d36f0dfbb4e10}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yaqing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0713a15d93ad4e054e1f88828d87dfa1}{%
+           family={Hua},
+           familyi={H\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3ab3e08fcfe96383b9a93624c50d2d41}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Jinxia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5e0d6f69efeb86a0318b2751c6308add}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Shu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b40b2483bdd51bc12ff6a254ec3953d3}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bb35a9273880b1eef455ba90b169df8c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Sheng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=01be2aa7b434d7cf486fe570028159f8}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Qiaowei},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=df4410e549f4e8879da3f1d98fc3732a}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Chenhui},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{d51282e8fb98e91643ef2fc12bd6d2bc}
+      \strng{fullhash}{e70c4180a7271aa8b96d4cb9aacd6126}
+      \strng{fullhashraw}{e70c4180a7271aa8b96d4cb9aacd6126}
+      \strng{bibnamehash}{e70c4180a7271aa8b96d4cb9aacd6126}
+      \strng{authorbibnamehash}{e70c4180a7271aa8b96d4cb9aacd6126}
+      \strng{authornamehash}{d51282e8fb98e91643ef2fc12bd6d2bc}
+      \strng{authorfullhash}{e70c4180a7271aa8b96d4cb9aacd6126}
+      \strng{authorfullhashraw}{e70c4180a7271aa8b96d4cb9aacd6126}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of medical virology}
+      \field{number}{7}
+      \field{title}{The effectiveness of quarantine of Wuhan city against the Corona Virus Disease 2019 (COVID-19): A well-mixed SEIR model analysis}
+      \field{volume}{92}
+      \field{year}{2020}
+      \field{pages}{841\bibrangedash 848}
+      \range{pages}{8}
+    \endentry
+    \entry{hu2020hospital}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=4b14b65883cab79a18b6071512db4b88}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c454da5f12b01dc541cd5d0d4534a990}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4f8f13702c243995b9c73ae0dd3aca4f}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Jiantao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3bdac6199eb7368820d993dcf1d5a9ee}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Lipeng},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2b52827248da37ccb9af0c327b423c2c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Qirun},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{f5bf083b5ae139dba20094d878f6dc4c}
+      \strng{fullhash}{121bacfe745072f11b23ed9708cffc43}
+      \strng{fullhashraw}{121bacfe745072f11b23ed9708cffc43}
+      \strng{bibnamehash}{121bacfe745072f11b23ed9708cffc43}
+      \strng{authorbibnamehash}{121bacfe745072f11b23ed9708cffc43}
+      \strng{authornamehash}{f5bf083b5ae139dba20094d878f6dc4c}
+      \strng{authorfullhash}{121bacfe745072f11b23ed9708cffc43}
+      \strng{authorfullhashraw}{121bacfe745072f11b23ed9708cffc43}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cmc-Comput. Mater. Contin.}
+      \field{title}{Hospital bed allocation strategy based on queuing theory during the covid-19 epidemic}
+      \field{volume}{66}
+      \field{year}{2020}
+      \field{pages}{793\bibrangedash 803}
+      \range{pages}{11}
+    \endentry
+    \entry{klein2022covid}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=9e9013705a8911138853ae4a83ad6e0c}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={Michael\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=f6ae2ac8d4910a5ced79c3940974d274}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Carolynn\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=56b0d8d7cbb3f91b29734ff7909c8d6b}{%
+           family={Lii},
+           familyi={L\bibinitperiod},
+           given={Evonne},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3aa7426697bce42cfc7cea99059ffa08}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Keying},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4a91d424a6ee243e95e1dccdddb1dbfc}{%
+           family={Mesbahi},
+           familyi={M\bibinitperiod},
+           given={Hamza},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bab8c93f8feac048815c64b3fe9ef248}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Tianjie},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d89bf75cf512ddbb175a0f910a8af20b}{%
+           family={Muckstadt},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1266155da34d30cbc80f05ab94061dc3}{%
+           family={Hupert},
+           familyi={H\bibinitperiod},
+           given={Nathaniel},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{a50e0197a4f8554dd73bae51c08cb5b0}
+      \strng{fullhash}{b5f82cd879010235bd149ce76fe5611f}
+      \strng{fullhashraw}{b5f82cd879010235bd149ce76fe5611f}
+      \strng{bibnamehash}{b5f82cd879010235bd149ce76fe5611f}
+      \strng{authorbibnamehash}{b5f82cd879010235bd149ce76fe5611f}
+      \strng{authornamehash}{a50e0197a4f8554dd73bae51c08cb5b0}
+      \strng{authorfullhash}{b5f82cd879010235bd149ce76fe5611f}
+      \strng{authorfullhashraw}{b5f82cd879010235bd149ce76fe5611f}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Disaster medicine and public health preparedness}
+      \field{number}{1}
+      \field{title}{COVID-19 models for hospital surge capacity planning: a systematic review}
+      \field{volume}{16}
+      \field{year}{2022}
+      \field{pages}{390\bibrangedash 397}
+      \range{pages}{8}
+    \endentry
+    \entry{koziol2020fractional}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=bb3024d55524353b4d1664f79d357747}{%
+           family={Kozio{ł}},
+           familyi={K\bibinitperiod},
+           given={Kamil},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6329cba1789df4e438d84b65311642f4}{%
+           family={Stanis{ł}awski},
+           familyi={S\bibinitperiod},
+           given={Rafa{ł}},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c2a834d1ec93101576cad452f18def75}{%
+           family={Bialic},
+           familyi={B\bibinitperiod},
+           given={Grzegorz},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{27f200c9dd66115f20b5494c07785035}
+      \strng{fullhash}{abd3a92618e735bcd96056b6bf3cdde6}
+      \strng{fullhashraw}{abd3a92618e735bcd96056b6bf3cdde6}
+      \strng{bibnamehash}{abd3a92618e735bcd96056b6bf3cdde6}
+      \strng{authorbibnamehash}{abd3a92618e735bcd96056b6bf3cdde6}
+      \strng{authornamehash}{27f200c9dd66115f20b5494c07785035}
+      \strng{authorfullhash}{abd3a92618e735bcd96056b6bf3cdde6}
+      \strng{authorfullhashraw}{abd3a92618e735bcd96056b6bf3cdde6}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{number}{23}
+      \field{title}{Fractional-order sir epidemic model for transmission prediction of covid-19 disease}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{8316}
+      \range{pages}{1}
+    \endentry
+    \entry{lauer2020incubation}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=cbe8941f22c2c88c09d5975a13449886}{%
+           family={Lauer},
+           familyi={L\bibinitperiod},
+           given={Stephen\bibnamedelima A},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9ab1689d69d35ccddbab22d6321b73a6}{%
+           family={Grantz},
+           familyi={G\bibinitperiod},
+           given={Kyra\bibnamedelima H},
+           giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=83718431f96fa5f2f163c5d8d0ae22df}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Qifang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=d539c3073304b1ab83204abd312ac959}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Forrest\bibnamedelima K},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=908f1087361910b8acabdcef1b7147af}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Qulu},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=92f17c0a9c374f2109384f513005a5a8}{%
+           family={Meredith},
+           familyi={M\bibinitperiod},
+           given={Hannah\bibnamedelima R},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b76917c74fea51e700fd9a609d317134}{%
+           family={Azman},
+           familyi={A\bibinitperiod},
+           given={Andrew\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=68b4dbf033ecb04ab5bf0af268e2da21}{%
+           family={Reich},
+           familyi={R\bibinitperiod},
+           given={Nicholas\bibnamedelima G},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=5ceece4c2efdc2dad862d8c3d12b277b}{%
+           family={Lessler},
+           familyi={L\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American College of Physicians}%
+      }
+      \strng{namehash}{17e1b023e672adf9e407d472b579b6dc}
+      \strng{fullhash}{8358abd59cd26ff914e517ff6fa1dde1}
+      \strng{fullhashraw}{8358abd59cd26ff914e517ff6fa1dde1}
+      \strng{bibnamehash}{8358abd59cd26ff914e517ff6fa1dde1}
+      \strng{authorbibnamehash}{8358abd59cd26ff914e517ff6fa1dde1}
+      \strng{authornamehash}{17e1b023e672adf9e407d472b579b6dc}
+      \strng{authorfullhash}{8358abd59cd26ff914e517ff6fa1dde1}
+      \strng{authorfullhashraw}{8358abd59cd26ff914e517ff6fa1dde1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of internal medicine}
+      \field{number}{9}
+      \field{title}{The incubation period of coronavirus disease 2019 (COVID-19) from publicly reported confirmed cases: estimation and application}
+      \field{volume}{172}
+      \field{year}{2020}
+      \field{pages}{577\bibrangedash 582}
+      \range{pages}{6}
+    \endentry
+    \entry{li2020modeling}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=9885f16be76c4e68e9c2aaf363a53600}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qian},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=0cd7147f62fc133a5fc997b62150745c}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Biao},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e96497aa5f58540e74cc826243e35967}{%
+           family={Bragazzi},
+           familyi={B\bibinitperiod},
+           given={Nicola\bibnamedelima Luigi},
+           giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=652da3382d264a5b1d24fb5fcd26fac5}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Yanni},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0c9c093ad6ee18072092692d81b554e7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jianhong},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ccc14e5f8134b4693620e899bbc01e0d}
+      \strng{fullhash}{c77cbd118f887f3905dfad0ba122f3aa}
+      \strng{fullhashraw}{c77cbd118f887f3905dfad0ba122f3aa}
+      \strng{bibnamehash}{c77cbd118f887f3905dfad0ba122f3aa}
+      \strng{authorbibnamehash}{c77cbd118f887f3905dfad0ba122f3aa}
+      \strng{authornamehash}{ccc14e5f8134b4693620e899bbc01e0d}
+      \strng{authorfullhash}{c77cbd118f887f3905dfad0ba122f3aa}
+      \strng{authorfullhashraw}{c77cbd118f887f3905dfad0ba122f3aa}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical biosciences}
+      \field{title}{Modeling the impact of mass influenza vaccination and public health interventions on COVID-19 epidemics with limited detection capability}
+      \field{volume}{325}
+      \field{year}{2020}
+      \field{pages}{108378}
+      \range{pages}{1}
+    \endentry
+    \entry{longini1986generalized}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b36b1fdbdc31de7407a4eb989ed8b4f1}{%
+           family={Longini\bibnamedelima Jr},
+           familyi={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Ira\bibnamedelima M},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b36b1fdbdc31de7407a4eb989ed8b4f1}
+      \strng{fullhash}{b36b1fdbdc31de7407a4eb989ed8b4f1}
+      \strng{fullhashraw}{b36b1fdbdc31de7407a4eb989ed8b4f1}
+      \strng{bibnamehash}{b36b1fdbdc31de7407a4eb989ed8b4f1}
+      \strng{authorbibnamehash}{b36b1fdbdc31de7407a4eb989ed8b4f1}
+      \strng{authornamehash}{b36b1fdbdc31de7407a4eb989ed8b4f1}
+      \strng{authorfullhash}{b36b1fdbdc31de7407a4eb989ed8b4f1}
+      \strng{authorfullhashraw}{b36b1fdbdc31de7407a4eb989ed8b4f1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical biosciences}
+      \field{number}{1}
+      \field{title}{The generalized discrete-time epidemic model with immunity: a synthesis}
+      \field{volume}{82}
+      \field{year}{1986}
+      \field{pages}{19\bibrangedash 41}
+      \range{pages}{23}
+    \endentry
+    \entry{ma2022cope}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=05a29da82f542676c561ef683d8e2ce8}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=008ce4db2d059d293329d0ad004f45ec}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Xue},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d8ee5537dcc9b4557c34e505487771e5}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Pengfei},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{98a3e78205bc22309651abbdd3c4e433}
+      \strng{fullhash}{1a9497f44d5f5c6cc4969ff25499579f}
+      \strng{fullhashraw}{1a9497f44d5f5c6cc4969ff25499579f}
+      \strng{bibnamehash}{1a9497f44d5f5c6cc4969ff25499579f}
+      \strng{authorbibnamehash}{1a9497f44d5f5c6cc4969ff25499579f}
+      \strng{authornamehash}{98a3e78205bc22309651abbdd3c4e433}
+      \strng{authorfullhash}{1a9497f44d5f5c6cc4969ff25499579f}
+      \strng{authorfullhashraw}{1a9497f44d5f5c6cc4969ff25499579f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Production Economics}
+      \field{title}{Cope with the COVID-19 pandemic: Dynamic bed allocation and patient subsidization in a public healthcare system}
+      \field{volume}{243}
+      \field{year}{2022}
+      \field{pages}{108320}
+      \range{pages}{1}
+    \endentry
+    \entry{mccormick1976computability}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7739550035c60286aba0e8c173be7077}{%
+           family={McCormick},
+           familyi={M\bibinitperiod},
+           given={Garth\bibnamedelima P},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7739550035c60286aba0e8c173be7077}
+      \strng{fullhash}{7739550035c60286aba0e8c173be7077}
+      \strng{fullhashraw}{7739550035c60286aba0e8c173be7077}
+      \strng{bibnamehash}{7739550035c60286aba0e8c173be7077}
+      \strng{authorbibnamehash}{7739550035c60286aba0e8c173be7077}
+      \strng{authornamehash}{7739550035c60286aba0e8c173be7077}
+      \strng{authorfullhash}{7739550035c60286aba0e8c173be7077}
+      \strng{authorfullhashraw}{7739550035c60286aba0e8c173be7077}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical programming}
+      \field{number}{1}
+      \field{title}{Computability of global solutions to factorable nonconvex programs: Part I—Convex underestimating problems}
+      \field{volume}{10}
+      \field{year}{1976}
+      \field{pages}{147\bibrangedash 175}
+      \range{pages}{29}
+    \endentry
+    \entry{meyerowitz2020systematic}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ca099880bebab52cf8be21e75c4e15d0}{%
+           family={Meyerowitz-Katz},
+           familyi={M\bibinithyphendelim K\bibinitperiod},
+           given={Gideon},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3fa98a1f8db0c235da1571f189c9216e}{%
+           family={Merone},
+           familyi={M\bibinitperiod},
+           given={Lea},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{220a01b4aa12937a64a763c7ac8f7cb8}
+      \strng{fullhash}{220a01b4aa12937a64a763c7ac8f7cb8}
+      \strng{fullhashraw}{220a01b4aa12937a64a763c7ac8f7cb8}
+      \strng{bibnamehash}{220a01b4aa12937a64a763c7ac8f7cb8}
+      \strng{authorbibnamehash}{220a01b4aa12937a64a763c7ac8f7cb8}
+      \strng{authornamehash}{220a01b4aa12937a64a763c7ac8f7cb8}
+      \strng{authorfullhash}{220a01b4aa12937a64a763c7ac8f7cb8}
+      \strng{authorfullhashraw}{220a01b4aa12937a64a763c7ac8f7cb8}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Infectious Diseases}
+      \field{title}{A systematic review and meta-analysis of published research data on COVID-19 infection fatality rates}
+      \field{volume}{101}
+      \field{year}{2020}
+      \field{pages}{138\bibrangedash 148}
+      \range{pages}{11}
+    \endentry
+    \entry{mo2021modeling}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=cb3f9e288663ee3405663ac0dcc5fc43}{%
+           family={Mo},
+           familyi={M\bibinitperiod},
+           given={Baichuan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7de2c07b35ea5dd18f1961add32d75dd}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Kairui},
+           giveni={K\bibinitperiod}}}%
+        {{hash=aaa9955fb9037812408de19d3a92bfe9}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=90923423449a52932e2e0f0b0b3e15dd}{%
+           family={Tam},
+           familyi={T\bibinitperiod},
+           given={Clarence},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1fbe5224ba3dcb4b1ccbb06b2e57bb6b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Daqing},
+           giveni={D\bibinitperiod}}}%
+        {{hash=76a7ec1c01f4b1051b61e6bda9c7ed14}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Yafeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=44d56adad58330553f99bb61b2afa0d2}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jinhua},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{2b9284eab937629d2fb4426ba1663ed7}
+      \strng{fullhash}{4471dc4f36642eb0ddbbcbd6e657c966}
+      \strng{fullhashraw}{4471dc4f36642eb0ddbbcbd6e657c966}
+      \strng{bibnamehash}{4471dc4f36642eb0ddbbcbd6e657c966}
+      \strng{authorbibnamehash}{4471dc4f36642eb0ddbbcbd6e657c966}
+      \strng{authornamehash}{2b9284eab937629d2fb4426ba1663ed7}
+      \strng{authorfullhash}{4471dc4f36642eb0ddbbcbd6e657c966}
+      \strng{authorfullhashraw}{4471dc4f36642eb0ddbbcbd6e657c966}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transportation Research Part C: Emerging Technologies}
+      \field{title}{Modeling epidemic spreading through public transit using time-varying encounter network}
+      \field{volume}{122}
+      \field{year}{2021}
+      \field{pages}{102893}
+      \range{pages}{1}
+    \endentry
+    \entry{covid19pvi2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c00be718ecf6f17ad9138111ecc7e052}{%
+           family={NIEHS},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{c00be718ecf6f17ad9138111ecc7e052}
+      \strng{fullhash}{c00be718ecf6f17ad9138111ecc7e052}
+      \strng{fullhashraw}{c00be718ecf6f17ad9138111ecc7e052}
+      \strng{bibnamehash}{c00be718ecf6f17ad9138111ecc7e052}
+      \strng{authorbibnamehash}{c00be718ecf6f17ad9138111ecc7e052}
+      \strng{authornamehash}{c00be718ecf6f17ad9138111ecc7e052}
+      \strng{authorfullhash}{c00be718ecf6f17ad9138111ecc7e052}
+      \strng{authorfullhashraw}{c00be718ecf6f17ad9138111ecc7e052}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/COVID19PVI/data/}}
+      \field{note}{Accessed: March 2023}
+      \field{title}{COVID-19 PVI Data}
+      \field{year}{2023}
+    \endentry
+    \entry{parker2020optimal}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=b23e71166179d0c3fa61a1273623f339}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bebfdbf9eef0b0771f7cdac75bf6fcc5}{%
+           family={Sawczuk},
+           familyi={S\bibinitperiod},
+           given={Hamilton},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f81d858dfc33561113ea5683ebe93669}{%
+           family={Ganjkhanloo},
+           familyi={G\bibinitperiod},
+           given={Fardin},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1d4b7bab9379137e26f1cda9cee114eb}{%
+           family={Ahmadi},
+           familyi={A\bibinitperiod},
+           given={Farzin},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2e8a0bf60da1cfc5e650671e412720e9}{%
+           family={Ghobadi},
+           familyi={G\bibinitperiod},
+           given={Kimia},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6ad6cc36a181f3ef3661d8370fc7648}
+      \strng{fullhash}{369cfac012970fb77f979ea2eb68fcb5}
+      \strng{fullhashraw}{369cfac012970fb77f979ea2eb68fcb5}
+      \strng{bibnamehash}{369cfac012970fb77f979ea2eb68fcb5}
+      \strng{authorbibnamehash}{369cfac012970fb77f979ea2eb68fcb5}
+      \strng{authornamehash}{c6ad6cc36a181f3ef3661d8370fc7648}
+      \strng{authorfullhash}{369cfac012970fb77f979ea2eb68fcb5}
+      \strng{authorfullhashraw}{369cfac012970fb77f979ea2eb68fcb5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2011.03528}
+      \field{title}{Optimal resource and demand redistribution for healthcare systems under stress from COVID-19}
+      \field{year}{2020}
+    \endentry
+    \entry{queiroz2022impacts}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=52bb7d29be75646354cb32c0ad035dd8}{%
+           family={Queiroz},
+           familyi={Q\bibinitperiod},
+           given={Maciel\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2b0eee2af138b8891f2107d5bfb1285e}{%
+           family={Ivanov},
+           familyi={I\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a2ae3bd1ed7b8fe29bdef26919b61bb2}{%
+           family={Dolgui},
+           familyi={D\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8d235c182cf71df9f98480e76d19e555}{%
+           family={Fosso\bibnamedelima Wamba},
+           familyi={F\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{17c8a53654a63e82bc1bec6a2535bea2}
+      \strng{fullhash}{ee7276378371ebe170e65c4e437c9154}
+      \strng{fullhashraw}{ee7276378371ebe170e65c4e437c9154}
+      \strng{bibnamehash}{ee7276378371ebe170e65c4e437c9154}
+      \strng{authorbibnamehash}{ee7276378371ebe170e65c4e437c9154}
+      \strng{authornamehash}{17c8a53654a63e82bc1bec6a2535bea2}
+      \strng{authorfullhash}{ee7276378371ebe170e65c4e437c9154}
+      \strng{authorfullhashraw}{ee7276378371ebe170e65c4e437c9154}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of operations research}
+      \field{number}{1}
+      \field{title}{Impacts of epidemic outbreaks on supply chains: mapping a research agenda amid the COVID-19 pandemic through a structured literature review}
+      \field{volume}{319}
+      \field{year}{2022}
+      \field{pages}{1159\bibrangedash 1196}
+      \range{pages}{38}
+    \endentry
+    \entry{sarkar2021covid}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=f48dd6d447eb9e5cde74d99cdd9269f5}{%
+           family={Sarkar},
+           familyi={S\bibinitperiod},
+           given={Sobhan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=00a3d0f913126ddad1a988cb5c99f398}{%
+           family={Pramanik},
+           familyi={P\bibinitperiod},
+           given={Anima},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9ca43399b33bc4071a9d80807f1eba11}{%
+           family={Maiti},
+           familyi={M\bibinitperiod},
+           given={Jhareswar},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8b6907b76c4da9a7f988b6df9fd5f744}{%
+           family={Reniers},
+           familyi={R\bibinitperiod},
+           given={Genserik},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{177f21f5cbf54b7688da88117f81fa49}
+      \strng{fullhash}{1d2c99db3296fd58843a5df8f41d4f41}
+      \strng{fullhashraw}{1d2c99db3296fd58843a5df8f41d4f41}
+      \strng{bibnamehash}{1d2c99db3296fd58843a5df8f41d4f41}
+      \strng{authorbibnamehash}{1d2c99db3296fd58843a5df8f41d4f41}
+      \strng{authornamehash}{177f21f5cbf54b7688da88117f81fa49}
+      \strng{authorfullhash}{1d2c99db3296fd58843a5df8f41d4f41}
+      \strng{authorfullhashraw}{1d2c99db3296fd58843a5df8f41d4f41}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Industrial Engineering}
+      \field{title}{COVID-19 outbreak: A data-driven optimization model for allocation of patients}
+      \field{volume}{161}
+      \field{year}{2021}
+      \field{pages}{107675}
+      \range{pages}{1}
+    \endentry
+    \entry{shi2023data}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=3a26865097eaaf777b96d3a9689523ce}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Fangzhu},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Concordia University}%
+      }
+      \strng{namehash}{3a26865097eaaf777b96d3a9689523ce}
+      \strng{fullhash}{3a26865097eaaf777b96d3a9689523ce}
+      \strng{fullhashraw}{3a26865097eaaf777b96d3a9689523ce}
+      \strng{bibnamehash}{3a26865097eaaf777b96d3a9689523ce}
+      \strng{authorbibnamehash}{3a26865097eaaf777b96d3a9689523ce}
+      \strng{authornamehash}{3a26865097eaaf777b96d3a9689523ce}
+      \strng{authorfullhash}{3a26865097eaaf777b96d3a9689523ce}
+      \strng{authorfullhashraw}{3a26865097eaaf777b96d3a9689523ce}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Data-Driven Optimization Model for Medical Resource Allocation during the Pandemic}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+    \endentry
+    \entry{soroush2022study}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a1a330f946e3629993a17e423534c873}{%
+           family={Soroush},
+           familyi={S\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e3a31078c495d582ffab468f76ed6d6c}{%
+           family={Nabilou},
+           familyi={N\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=94e454dc511ac444fa672bc03cf88b88}{%
+           family={Faramarzi},
+           familyi={F\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e72bddaaa67618820c53b16ca902f9a8}{%
+           family={Yusefzadeh},
+           familyi={Y\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c935dfb05bbe7f1351d389a643ade996}
+      \strng{fullhash}{a06cbf5b5aea6d851f3f327f91f57343}
+      \strng{fullhashraw}{a06cbf5b5aea6d851f3f327f91f57343}
+      \strng{bibnamehash}{a06cbf5b5aea6d851f3f327f91f57343}
+      \strng{authorbibnamehash}{a06cbf5b5aea6d851f3f327f91f57343}
+      \strng{authornamehash}{c935dfb05bbe7f1351d389a643ade996}
+      \strng{authorfullhash}{a06cbf5b5aea6d851f3f327f91f57343}
+      \strng{authorfullhashraw}{a06cbf5b5aea6d851f3f327f91f57343}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC Health Services Research}
+      \field{number}{1}
+      \field{title}{A study of the evacuation and allocation of hospital beds during the Covid-19 epidemic: a case study in Iran}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{pages}{864}
+      \range{pages}{1}
+    \endentry
+    \entry{florida_covid19_hub2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a0118f2bf5bd49b02b523b260e264d39}{%
+           family={USF},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0118f2bf5bd49b02b523b260e264d39}
+      \strng{fullhash}{a0118f2bf5bd49b02b523b260e264d39}
+      \strng{fullhashraw}{a0118f2bf5bd49b02b523b260e264d39}
+      \strng{bibnamehash}{a0118f2bf5bd49b02b523b260e264d39}
+      \strng{authorbibnamehash}{a0118f2bf5bd49b02b523b260e264d39}
+      \strng{authornamehash}{a0118f2bf5bd49b02b523b260e264d39}
+      \strng{authorfullhash}{a0118f2bf5bd49b02b523b260e264d39}
+      \strng{authorfullhashraw}{a0118f2bf5bd49b02b523b260e264d39}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://covid19-usflibrary.hub.arcgis.com/}}
+      \field{note}{Accessed: March 2023}
+      \field{title}{Florida COVID-19 Hub}
+      \field{year}{2023}
+    \endentry
+    \entry{waseel2024assessing}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=36540a87b99023eadbc87c44dc2c4658}{%
+           family={Waseel},
+           familyi={W\bibinitperiod},
+           given={Farhad},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8f587dab7d34bedd62b60f94d8390827}{%
+           family={Streftaris},
+           familyi={S\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ee3f6b70ae2fc73a73be9b6494fc152d}{%
+           family={Rudrusamy},
+           familyi={R\bibinitperiod},
+           given={Bhuvendhraa},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a42759b0c2d63f5a5a9fe8b8b5504e0f}{%
+           family={Dass},
+           familyi={D\bibinitperiod},
+           given={Sarat\bibnamedelima C},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a27d5fb478c0f2fc7f2db2c5b6b18da3}
+      \strng{fullhash}{e443b71450fbb2623d5384ae276462c2}
+      \strng{fullhashraw}{e443b71450fbb2623d5384ae276462c2}
+      \strng{bibnamehash}{e443b71450fbb2623d5384ae276462c2}
+      \strng{authorbibnamehash}{e443b71450fbb2623d5384ae276462c2}
+      \strng{authornamehash}{a27d5fb478c0f2fc7f2db2c5b6b18da3}
+      \strng{authorfullhash}{e443b71450fbb2623d5384ae276462c2}
+      \strng{authorfullhashraw}{e443b71450fbb2623d5384ae276462c2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Infectious Disease Modelling}
+      \field{number}{2}
+      \field{title}{Assessing the dynamics and impact of COVID-19 vaccination on disease spread: A data-driven approach}
+      \field{volume}{9}
+      \field{year}{2024}
+      \field{pages}{527\bibrangedash 556}
+      \range{pages}{30}
+    \endentry
+    \entry{yinusa2023optimizing}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5aeee7eed2e520f48aac7ea3b06a0002}{%
+           family={Yinusa},
+           familyi={Y\bibinitperiod},
+           given={Ahmeed},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f315f6856063e075d4695d191a910d4e}{%
+           family={Faezipour},
+           familyi={F\bibinitperiod},
+           given={Misagh},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{ad26ac2638e5894bf9931a956e8e05b1}
+      \strng{fullhash}{ad26ac2638e5894bf9931a956e8e05b1}
+      \strng{fullhashraw}{ad26ac2638e5894bf9931a956e8e05b1}
+      \strng{bibnamehash}{ad26ac2638e5894bf9931a956e8e05b1}
+      \strng{authorbibnamehash}{ad26ac2638e5894bf9931a956e8e05b1}
+      \strng{authornamehash}{ad26ac2638e5894bf9931a956e8e05b1}
+      \strng{authorfullhash}{ad26ac2638e5894bf9931a956e8e05b1}
+      \strng{authorfullhashraw}{ad26ac2638e5894bf9931a956e8e05b1}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied System Innovation}
+      \field{number}{5}
+      \field{title}{Optimizing healthcare delivery: a model for staffing, patient assignment, and resource allocation}
+      \field{volume}{6}
+      \field{year}{2023}
+      \field{pages}{78}
+      \range{pages}{1}
+    \endentry
+    \entry{zheng2022real}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=0d0c3347faba4c97bf1cfbf073d77e1a}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Caifang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d57b115c71d6143d38b4196ab95e9a4c}{%
+           family={Shao},
+           familyi={S\bibinitperiod},
+           given={Weihao},
+           giveni={W\bibinitperiod}}}%
+        {{hash=01205ecbc3acac5ab7489c8f3aadb691}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaorui},
+           giveni={X\bibinitperiod}}}%
+        {{hash=3e6584898df05b7a864ee2c79695b013}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Bowen},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0cc5316e6f0e5fc8025c0dfecc80dbce}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Gaili},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4fece3f163324172bba987dcd205bd8e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{28fd2cd852ed57ee8792b712bcd645ce}
+      \strng{fullhash}{97b540c562c4e7adb91fb4879355628e}
+      \strng{fullhashraw}{97b540c562c4e7adb91fb4879355628e}
+      \strng{bibnamehash}{97b540c562c4e7adb91fb4879355628e}
+      \strng{authorbibnamehash}{97b540c562c4e7adb91fb4879355628e}
+      \strng{authornamehash}{28fd2cd852ed57ee8792b712bcd645ce}
+      \strng{authorfullhash}{97b540c562c4e7adb91fb4879355628e}
+      \strng{authorfullhashraw}{97b540c562c4e7adb91fb4879355628e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of infectious diseases}
+      \field{title}{Real-world effectiveness of COVID-19 vaccines: a literature review and meta-analysis}
+      \field{volume}{114}
+      \field{year}{2022}
+      \field{pages}{252\bibrangedash 260}
+      \range{pages}{9}
+    \endentry
+  \enddatalist
+  \missing{loridaHospitalAssociation2021}
+\endrefsection
+\endinput
+

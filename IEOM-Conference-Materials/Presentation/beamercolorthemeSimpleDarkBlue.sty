@@ -1,0 +1,58 @@
+% beamercolorthemeSimpleDarkBlue.sty
+% --------------------------------------------------
+%  Final version: Dark theme w/ light accents
+%  - Strong contrast for blocks, lists, captions
+%  - Distinct block headers
+%  - Slight off-white text
+% --------------------------------------------------
+\ProvidesPackage{beamercolorthemeSimpleDarkBlue}[2025/04/18 final theme release]
+
+\RequirePackage{xcolor}
+
+% --- Base Background & Text Colors ---
+\definecolor{BGCanvas}{HTML}{36454f}         % dark canvas background
+\definecolor{HeaderBand}{HTML}{536878}       % slide title/frametitle bar
+\definecolor{TextSoft}{HTML}{F2F3F4}         % off-white text (not too stark)
+
+% --- Structure (enumerate, bullets, captions, etc.) ---
+\definecolor{AccentLight}{HTML}{F2F3F4}      % icy blue for visibility
+\setbeamercolor{structure}{fg=AccentLight}
+
+% --- Block Body Background (shared) ---
+\definecolor{BlockBodyBG}{HTML}{dbe6eb}      % soft light blue-grey
+
+% --- Distinct Block Title Colors ---
+\definecolor{BlockHeadDefault}{HTML}{b0d6df}   % block (definition)
+\definecolor{BlockHeadExample}{HTML}{89C2D9}   % block (example/theorem)
+\definecolor{BlockHeadAlerted}{HTML}{61A5C2}   % block (alert)
+
+% --- Apply Global Colors ---
+\setbeamercolor{background canvas}{bg=BGCanvas}
+\setbeamercolor{normal text}{fg=TextSoft}
+
+% --- Slide Titles ---
+\setbeamercolor{title}{bg=HeaderBand,fg=TextSoft}
+\setbeamercolor{frametitle}{bg=HeaderBand,fg=TextSoft}
+
+% --- ToC Elements ---
+\setbeamercolor{section in toc}{fg=TextSoft}
+\setbeamercolor{subsection in toc}{fg=TextSoft}
+
+% --- Table Captions ---
+\setbeamercolor{caption name}{fg=AccentLight}
+
+% --- Block: Definition / Default ---
+\setbeamercolor{block title}{fg=BGCanvas,bg=BlockHeadDefault}
+\setbeamercolor{block body}{fg=BGCanvas,bg=BlockBodyBG}
+
+% --- Block: Example / Theorem ---
+\setbeamercolor{block title example}{fg=BGCanvas,bg=BlockHeadExample}
+\setbeamercolor{block body example}{fg=BGCanvas,bg=BlockBodyBG}
+
+% --- Block: Alerted ---
+\setbeamercolor{block title alerted}{fg=BGCanvas,bg=BlockHeadAlerted}
+\setbeamercolor{block body alerted}{fg=BGCanvas,bg=BlockBodyBG}
+
+% --- Footline (frame number only) ---
+\setbeamertemplate{footline}[frame number]
+\setbeamercolor{footline}{fg=TextSoft!60}
